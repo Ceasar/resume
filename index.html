@@ -20,8 +20,16 @@
         text-align: center;
       }
 
+      .page-header {
+        padding-top: 20px;
+      }
+
       #employment h4 {
         border-bottom: 1px solid #EEE;
+      }
+
+      #employment .row:last-child h4 {
+        border-bottom: 0px;
       }
 
       footer > p {
@@ -38,134 +46,132 @@
   <body>
     <div class="container">
       <h1>Ceasar Bautista</h1>
-      <div class="section">
+      <div class="section" id="employment">
+        <div class="page-header">
+          <h1>Employment</h1>
+        </div>
         <div class="row">
-          <div class="span12" id="employment">
-            <div class="page-header">
-              <h1>Employment</h1>
-            </div>
-            <div class="row">
-              <div class="span4">
-                <h2>PennApps Labs</h2>
-                <h3>Software Engineer</h3>
-                <h4>Spring 2011 - Current</h4>
-              </div>
-              <div class="span8">
-                <ul>
-                  <li>Built the back-end of PennCourseReview.com using Django.</li>
-                  <li>Trained three new developers to familiarize them with Django, Python and Git.</li>
-                  <li>Migrated and restructured records from the old PennCourseReview database to fit the new PennCourseReview schema.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="span4">
-                <h2>The Daily Pennsylvanian</h2>
-                <h3>Web Developer</h3>
-                <h4>Spring 2011 - Current</h4>
-              </div>
-              <div class="span8">
-                <ul>
-                  <li>Built the complete back-end of the 34th Street Dining Guide website using Django.</li>
-                  <li>Wrote the JavaScript which enables users to filter restaurants by multiple filters simulatenously.</li>
-                  <li>Built a job assigment database system using PHP to allow editors to more easily assign jobs to photographers.</li>
-                  <li>Awarded "Web Developer of the Year" for 2011.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="span4">
-                <h2>Lemonwi.se</h2>
-                <h3>Software Engineer, Intern</h3>
-                <h4>Summer 2011</h4>
-              </div>
-              <div class="span8">
-                <ul>
-                  <li>Designed and implemented a REST API using Django-Tastypie.</li>
-                  <li>Extended the Django admin site to speed up creating test fixtures for demos.</li>
-                  <li>Built a web crawler and basic analytics tools that we used to analyze the effectiveness of various rating systems.</li>
-                </ul>
-              </div>
-            </div>
+          <div class="span6">
+            <h2>PennApps Labs</h2>
+            <h3>Software Engineer</h3>
+            <h4>Spring 2011 - Current | Philadelphia, PA</h4>
           </div>
-          <div class="span4" id="education">
-            <div class="page-header">
-              <h1>Education</h1>
-            </div>
-            <div class="row">
-              <div class="span4">
-                <h2>University of Pennsylvania</h2>
-                <h3>Philadelphia, PA</h3>
-                <h4>Fall 2010 - Spring 2014</h4>
-                <ul>
-                  <li>(Expected) BSE in Computer and Information Science</li>
-                  <li>Coursework: Computer Architecture, Databases, AI, Scalable and Cloud Computing, Python</li>
-                  <li>Currently studying Algorithms, Software Engineering, Computer Organization and Design, Haskell, Unix</li>
-                  <li>Currently TA-ing the Python half-credit course.</li>
-                </ul>
-              </div>
-            </div>
+          <div class="span9">
+            <ul>
+              <li>Built the back-end of PennCourseReview.com using Django.</li>
+              <li>Trained three new developers to familiarize them with Django, Python and Git.</li>
+              <li>Migrated and restructured records from the old PennCourseReview database to fit the new PennCourseReview schema.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h2>The Daily Pennsylvanian</h2>
+            <h3>Web Developer</h3>
+            <h4>Winter 2011 - Current | Philadelphia, PA</h4>
+          </div>
+          <div class="span9">
+            <ul>
+              <li>Built the complete back-end of the 34th Street Dining Guide website using Django.</li>
+              <li>Wrote the JavaScript which enables users to filter restaurants by multiple filters simulatenously.</li>
+              <li>Built a job assigment database system using PHP to allow editors to more easily assign jobs to photographers.</li>
+              <li>Awarded "Web Developer of the Year" for 2011.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h2>Lemonwi.se</h2>
+            <h3>Software Engineer, Intern</h3>
+            <h4>Summer 2011 | San Francisco, CA</h4>
+          </div>
+          <div class="span9">
+            <ul>
+              <li>Designed and implemented a REST API using Django-Tastypie.</li>
+              <li>Extended the Django admin site to speed up creating test fixtures for demos.</li>
+              <li>Built a web crawler and basic analytics tools that we used to analyze the effectiveness of various rating systems.</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="section" id="">
+      <div id="education">
+        <div class="page-header">
+          <h1>Education</h1>
+        </div>
         <div class="row">
-          <div class="span12" id="projects">
-            <div class="page-header">
-              <h1>Projects</h1>
-            </div>
-            <div class="row">
-              <div class="span4">
-                <h2>PennBook</h2>
-                <h4>Fall 2011</h4>
-                <small>github.com/Ceasar/PennBook</small>
-                <ul>
-                  <li>Used Ruby on Rails to write a Facebook clone.</li>
-                </ul>
-              </div>
-              <div class="span4">
-                <h2>LC4 Compiler</h2>
-                <h4>Fall 2011</h4>
-                <small>github.com/Ceasar/240Final</small>
-                <ul>
-                  <li>Used C to write a compiler for the fictional LC4 assembly language.</li>
-                </ul>
-              </div>
-              <div class="span4">
-                <h2>Project Euler</h2>
-                <h4>Summer 2011</h4>
-                <small>github.com/Ceasar/Euler-Solutions</small>
-                <ul>
-                  <li>Used Python to solve 30 problems on projecteuler.com, a website which houses difficult computational problems.</li>
-                </ul>
-              </div>
-            </div>
+          <div class="span6">
+            <h2>University of Pennsylvania</h2>
+            <h3>Philadelphia, PA</h3>
+            <h4>Fall 2010 - Spring 2014</h4>
           </div>
-        <div class="span4" id="skills">
-          <div class="page-header">
-            <h1>Skills</h1>
-          </div>
-          <div class="row">
-            <div class="span4">
-              <ol>
-                <li>Python</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>Git</li>
-                <li>SQL</li>
-                <li>Java</li>
-                <li>Hadoop</li>
-                <li>Ruby on Rails</li>
-                <li>C</li>
-                <li>PHP</li>
-              </ol>
-            </div>
+          <div class="span9">
+            <ul>
+              <li>(Expected) BSE in Computer and Information Science</li>
+              <li>Coursework: Computer Architecture, Databases, AI, Scalable and Cloud Computing, Python</li>
+              <li>Currently studying Algorithms, Software Engineering, Computer Organization and Design, Haskell, Unix</li>
+              <li>Currently TA-ing the Python half-credit course.</li>
+            </ul>
           </div>
         </div>
       </div>
-      <footer>
-      <p>ceasarb@seas.upenn.edu | (702) 979-4316 | 3345 Edgemont St. | Philadelphia PA</p>
-      </footer>
+  <div class="section" id="">
+    <div class="row">
+      <div class="span12" id="projects">
+        <div class="page-header">
+          <h1>Projects</h1>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <h2>PennBook</h2>
+            <h4>Fall 2011</h4>
+            <small>github.com/Ceasar/PennBook</small>
+            <ul>
+              <li>Used Ruby on Rails to write a Facebook clone.</li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h2>LC4 Compiler</h2>
+            <h4>Fall 2011</h4>
+            <small>github.com/Ceasar/240Final</small>
+            <ul>
+              <li>Used C to write a compiler for the fictional LC4 assembly language.</li>
+            </ul>
+          </div>
+          <div class="span4">
+            <h2>Project Euler</h2>
+            <h4>Summer 2011</h4>
+            <small>github.com/Ceasar/Euler-Solutions</small>
+            <ul>
+              <li>Used Python to solve 30 problems on projecteuler.com, a website which houses difficult computational problems.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="span4" id="skills">
+        <div class="page-header">
+          <h1>Skills</h1>
+        </div>
+        <div class="row">
+          <div class="span4">
+            <ol>
+              <li>Python</li>
+              <li>Django</li>
+              <li>JavaScript</li>
+              <li>Git</li>
+              <li>SQL</li>
+              <li>Java</li>
+              <li>Hadoop</li>
+              <li>Ruby on Rails</li>
+              <li>C</li>
+              <li>PHP</li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+    <footer>
+    <p>ceasarb@seas.upenn.edu | (702) 979-4316 | 3345 Edgemont St. | Philadelphia PA</p>
+    </footer>
+  </div>
+</body>
 </html>
