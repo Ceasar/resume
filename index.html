@@ -14,6 +14,16 @@
     <!-- Le styles -->
     <link href="./bootstrap.css" rel="stylesheet">
     <style type="text/css">
+      ol.horizontal{
+        list-style-type: decimal;
+        width: 600px;
+      }
+
+      ol.horizontal li{
+        float: left;
+        width: 200px;
+        padding: 2px 0px;
+      }
       .container > h1{
         padding: 20px 0px 0px;
         font-size: 40px;
@@ -21,7 +31,7 @@
       }
 
       .page-header {
-        padding-top: 20px;
+        padding-top: 15px;
       }
 
       #employment h4 {
@@ -46,6 +56,25 @@
   <body>
     <div class="container">
       <h1>Ceasar Bautista</h1>
+      <div class="section" id="education">
+        <div class="page-header">
+          <h1>Education</h1>
+        </div>
+        <div class="row">
+          <div class="span6">
+            <h2>University of Pennsylvania</h2>
+            <h3>(Expected) BSE in Computer Science</h3>
+            <h4>Fall 2010 - Spring 2014 | Philadelphia, PA</h4>
+          </div>
+          <div class="span9">
+            <ul>
+              <li>Rising CS Junior seeking summer internship.</li>
+              <li>Currently TA-ing the Python half-credit course.</li>
+              <li>Coursework: Computer Architecture, Databases, AI, Scalable and Cloud Computing, Python, Algorithms, Software Engineering, Computer Organization and Design, Haskell, Unix</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="section" id="employment">
         <div class="page-header">
           <h1>Employment</h1>
@@ -72,10 +101,9 @@
           </div>
           <div class="span9">
             <ul>
-              <li>Built the complete back-end of the 34th Street Dining Guide website using Django.</li>
-              <li>Wrote the JavaScript which enables users to filter restaurants by multiple filters simulatenously.</li>
-              <li>Built a job assigment database system using PHP to allow editors to more easily assign jobs to photographers.</li>
               <li>Awarded "Web Developer of the Year" for 2011.</li>
+              <li>Built the complete back-end (including JavaScript) of the 34th Street Dining Guide website using Django.</li>
+              <li>Built a job assigment database system using PHP to allow editors to more easily assign jobs to photographers.</li>
             </ul>
           </div>
         </div>
@@ -88,89 +116,61 @@
           <div class="span9">
             <ul>
               <li>Designed and implemented a REST API using Django-Tastypie.</li>
-              <li>Extended the Django admin site to speed up creating test fixtures for demos.</li>
               <li>Built a web crawler and basic analytics tools that we used to analyze the effectiveness of various rating systems.</li>
+              <li>Extended the Django admin site to speed up creating test fixtures for demos.</li>
             </ul>
           </div>
         </div>
       </div>
-      <div id="education">
+      <div class="section" id="projects">
         <div class="page-header">
-          <h1>Education</h1>
-        </div>
-        <div class="row">
-          <div class="span6">
-            <h2>University of Pennsylvania</h2>
-            <h3>Philadelphia, PA</h3>
-            <h4>Fall 2010 - Spring 2014</h4>
-          </div>
-          <div class="span9">
-            <ul>
-              <li>(Expected) BSE in Computer and Information Science</li>
-              <li>Coursework: Computer Architecture, Databases, AI, Scalable and Cloud Computing, Python</li>
-              <li>Currently studying Algorithms, Software Engineering, Computer Organization and Design, Haskell, Unix</li>
-              <li>Currently TA-ing the Python half-credit course.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  <div class="section" id="">
-    <div class="row">
-      <div class="span12" id="projects">
-        <div class="page-header">
-          <h1>Projects</h1>
+          <h1>Projects
+            <small><a href="http://github.com/Ceasar">github.com/Ceasar</a></small>
+          </h1>
         </div>
         <div class="row">
           <div class="span4">
             <h2>PennBook</h2>
             <h4>Fall 2011</h4>
-            <small><a href="https://github.com/Ceasar/PennBook">github.com/Ceasar/PennBook</a></small>
-            <ul>
-              <li>Used Ruby on Rails to write a Facebook clone.</li>
-            </ul>
+            <small><a href="http://pennbook.heroku.com">pennbook.heroku.com</a></small>
+            <p>Used Ruby on Rails to write a fully-functional Facebook clone. Besides all the standard features you would expect, PennBook features the abilty to visualize your network, see online friends, and real-time updates on the newsfeed.</p>
           </div>
           <div class="span4">
             <h2>LC4 Simulator</h2>
             <h4>Fall 2011</h4>
             <small><a href="https://github.com/Ceasar/240Final">github.com/Ceasar/240Final</a></small>
-            <ul>
-              <li>Used C to create a virtual computer that could run programs written in the fictional LC4 assembly language.</li>
-            </ul>
+            <p>Used C to create a virtual computer that could run programs written in the fictional LC4 assembly language.</p>
           </div>
           <div class="span4">
             <h2>Project Euler</h2>
             <h4>Summer 2011</h4>
             <small><a href="https://github.com/Ceasar/Euler-Solutions">github.com/Ceasar/Euler-Solutions</a></small>
-            <ul>
-              <li>Used Python to solve 30 problems on projecteuler.com, a website which houses difficult computational problems.</li>
-            </ul>
+            <p>Used Python to solve 30 problems on projecteuler.com, a website which features hundreds of increasingly difficult computational problems.</p>
+          </div>
+          <div class="span4">
+            <h2>Gadgets</h2>
+            <h4>Ongoing</h4>
+            <small><a href="https://github.com/Ceasar/gadgets">github.com/Ceasar/gadgets</a></small>
+            <p>A collection of highly reusable data structures and functions written in Python. Includes tools to analyze datasets, solutions to common algorithms, and tools to more easily manage various kind of files.</p>
           </div>
         </div>
       </div>
-      <div class="span4" id="skills">
+      <div class="section" id="skills">
         <div class="page-header">
           <h1>Skills</h1>
         </div>
         <div class="row">
-          <div class="span4">
-            <ol>
-              <li>Python</li>
-              <li>Django</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-              <li>SQL</li>
-              <li>Java</li>
-              <li>Hadoop</li>
-              <li>Ruby on Rails</li>
-              <li>C</li>
-              <li>PHP</li>
-            </ol>
-          </div>
+          <div class="span12">
+            <ul>
+              <li>Languages: Python, Javascript, SQL, Java, Haskell, C, PHP</li>
+              <li>Technologies: Django, Git, Ruby on Rails, Mercurial, Hadoop</li>
+            </ul>
+        </div>
         </div>
       </div>
     </div>
     <footer>
-    <p>ceasarb@seas.upenn.edu | (702) 979-4316 | 3345 Edgemont St. | Philadelphia PA</p>
+    <p>ceasarb@seas.upenn.edu | (702) 979-4316 | Philadelphia, PA</p>
     </footer>
   </div>
 </body>
