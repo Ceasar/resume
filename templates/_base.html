@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Ceasar Bautista</title>
+        <meta name="description" content="">
+        <meta name="author" content="Ceasar Bautista">
+
+        <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <!-- Le styles -->
+        <link href="./bootstrap.css" rel="stylesheet">
+        <style type="text/css">
+            h1 {
+                font-size: 30px;
+                margin-bottom: 5px;
+            }
+
+            li {
+                color: #404040;
+            }
+
+            .container > h1{
+                padding: 20px 0px 0px;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .page-header {
+                padding-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            #employment h4 {
+                border-bottom: 1px solid #EEE;
+            }
+
+            #employment .row:last-child h4 {
+                border-bottom: 0px;
+            }
+
+            footer > p {
+                text-align: center;
+            }
+        </style>
+
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    </head>
+    <body>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
