@@ -42,3 +42,9 @@ footer {
 footer > p {
     text-align: center;
 }
+
+#timestamp {
+    position: absolute;
+    bottom: 9px;
+    right: 1em;
+}
