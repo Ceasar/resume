@@ -1,21 +1,23 @@
 {% extends "_base.html" %}
 {% block body %}
 <div class="container">
-    <button id="print" class="btn" onclick="window.print()">Print</button>
-    <h1>Ceasar Bautista</h1>
     <div class="row-fluid">
-        {% include "_contact.html" %}
+        <div class="offset1 span11">
+            <h1>Ceasar Bautista</h1>
+            {% include "_contact.html" %}
+        </div>
     </div>
     <div id="main" class="row-fluid">
-        <div id="history" class="span6">
-        {% include "_employment.html" %}
+        <div id="history" class="offset1 span5">
+            {% include "_employment.html" %}
         </div>
-        <div id="value" class="offset1 span4">
-        {% include "_projects.html" %}
-        {% include "_education.html" %}
-        {% include "_skills.html" %}
+        <div id="value" class="offset1 span5">
+            {% include "_education.html" %}
+            {% include "_projects.html" %}
+            {% include "_skills.html" %}
         </div>
     </div>
+    <button id="print" class="btn" onclick="window.print()">Print</button>
     <div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
 </div>
 <script>

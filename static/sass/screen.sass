@@ -3,8 +3,17 @@
 // Include responsive Bootstrap styles
 @import "bootstrap-responsive"
 
+.important
+    @extend strong
+
+.unimportant
+    color: $grayLight
+    @extend small
+
+.unit
+    margin: 0.5em 0
+
 a
-    color: $grayDark
     color: black
 
 ul
@@ -12,46 +21,55 @@ ul
     margin: 0
 
 li
-    margin: 1px 5px 1px 0
+    // Give the right column some space
+    margin-right: 5%
 
 .container
+    margin: 1em 0
     // Used for timestamp
     position: relative
-    margin-top: 1em
-    margin-bottom: 2em
 
-.position
-    margin-top: 1em
+.position, .project
+    @extend .unit
 
 .name
-    @extend strong
+    @extend .important
 
 .title
-    color: $grayLight
-    @extend small
+    @extend .unimportant
 
 .context
-    color: $grayLight
-    @extend small
+    @extend .unimportant
 
-#name
-    @extend h1
 
-#projects
+address
+    margin: 0
+
+.minor
+    position: absolute
+    top: 0
+    right: 0
+
+h1
+    margin-bottom: 5px
+
+#contact
+    @extend .unimportant
+    margin-bottom: 10px
+
+    li
+        display: inline-block
+        margin: 0 0.1em
 
 // print button
 #print
-    position: absolute
-    bottom: 0px
-    right: 2em
+    @extend .unimportant
+    @extend .minor
     // display: none
 
-
 #timestamp
-    @extend small
-    position: absolute
-    bottom: 9px
-    right: 1em
+    @extend .unimportant
+    @extend .minor
     display: none
 
 

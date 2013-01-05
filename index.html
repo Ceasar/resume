@@ -27,20 +27,21 @@
     <body>
         
 <div class="container">
-    <button id="print" class="btn" onclick="window.print()">Print</button>
-    <h1>Ceasar Bautista</h1>
     <div class="row-fluid">
-        <div id="contact" class="section span6">
-    <address>
-        <div id="email">cbautista2010@gmail.com</div>
-        <div id="mobile">(702) 979 4316</div>
-        <div id="address">Philadelphia, PA</div>
-    </address>
+        <div class="offset1 span11">
+            <h1>Ceasar Bautista</h1>
+            <div id="contact">
+    <ul>
+        <li id="address">Philadelphia, PA</li>
+        <li id="mobile">(702) 979 4316</li>
+        <li id="email">cbautista2010@gmail.com</li>
+    </ul>
 </div>
+        </div>
     </div>
     <div id="main" class="row-fluid">
-        <div id="history" class="span6">
-        <div class="section" id="employment">
+        <div id="history" class="offset1 span5">
+            <div class="section" id="employment">
     <h4>Employment</h4>
     <div class="positions">
         
@@ -90,8 +91,20 @@
     </div>
 </div>
         </div>
-        <div id="value" class="offset1 span4">
-        <div class="section" id="projects">
+        <div id="value" class="offset1 span5">
+            <div class="section" id="education">
+    <h4>Education</h4>
+    <div class="contextual">
+        <div class="name">University of Pennsylvania</div>
+        <div class="title">(Expected) BSE in Computer Science</div>
+        <div class="context">Fall 2010 - Spring 2014</div>
+        <ul>
+            <li>CS Junior seeking summer internship.</li>
+            <li>Coursework: Advanced Functional Programming, Operating Systems, Algorithms, Software Engineering, Databases, AI, Recursion, Cloud Computing, Python, Haskell, Unix, C++</li>
+        </ul>
+    </div>
+</div>
+            <div class="section" id="projects">
     <h4><a href="http://github.com/Ceasar">Projects</a></h4>
     <div id="projects">
         
@@ -115,19 +128,7 @@
         
     </div>
 </div>
-        <div class="section" id="education">
-    <h4>Education</h4>
-    <div class="contextual">
-        <div class="name">University of Pennsylvania</div>
-        <div class="title">(Expected) BSE in Computer Science</div>
-        <div class="context">Fall 2010 - Spring 2014</div>
-        <ul>
-            <li>CS Junior seeking summer internship.</li>
-            <li>Coursework: Advanced Functional Programming, Operating Systems, Algorithms, Software Engineering, Databases, AI, Recursion, Cloud Computing, Python, Haskell, Unix, C++</li>
-        </ul>
-    </div>
-</div>
-        <div class="section row-fluid" id="skills">
+            <div class="section row-fluid" id="skills">
     <div id="technologies" class="span6">
         <h4>Technologies</h4>
         <ul>
@@ -149,6 +150,7 @@
 </div>
         </div>
     </div>
+    <button id="print" class="btn" onclick="window.print()">Print</button>
     <div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
 </div>
 <script>

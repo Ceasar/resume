@@ -706,12 +706,12 @@ p {
 }
 
 /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-small, h3, .title, .context, #timestamp {
+small, .unimportant, .title, .context, #contact, #print, #timestamp {
   font-size: 85%;
 }
 
 /* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-strong, .name {
+strong, .important, .name {
   font-weight: bold;
 }
 
@@ -776,7 +776,7 @@ a.text-success:hover {
 }
 
 /* line 50, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, #name, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
@@ -785,21 +785,21 @@ h1, #name, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 /* line 57, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, #name small, h1 h3, #name h3, h1 .title, #name .title, h1 .context, #name .context, h1 #timestamp, #name #timestamp, h2 small, h2 h3, h2 .title, h2 .context, h2 #timestamp, h3 small, h3 h3, h3 .title, h3 .context, h3 #timestamp, h4 small, h4 h3, h4 .title, h4 .context, h4 #timestamp, h5 small, h5 h3, h5 .title, h5 .context, h5 #timestamp, h6 small, h6 h3, h6 .title, h6 .context, h6 #timestamp {
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print, h1 #timestamp, h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print, h2 #timestamp, h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print, h3 #timestamp, h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print, h4 #timestamp, h5 small, h5 .unimportant, h5 .title, h5 .context, h5 #contact, h5 #print, h5 #timestamp, h6 small, h6 .unimportant, h6 .title, h6 .context, h6 #contact, h6 #print, h6 #timestamp {
   font-weight: normal;
   line-height: 1;
   color: #999999;
 }
 
 /* line 66, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, #name,
+h1,
 h2,
 h3 {
   line-height: 40px;
 }
 
 /* line 68, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, #name {
+h1 {
   font-size: 38.5px;
 }
 
@@ -829,22 +829,22 @@ h6 {
 }
 
 /* line 75, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, #name small, h1 h3, #name h3, h1 .title, #name .title, h1 .context, #name .context, h1 #timestamp, #name #timestamp {
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print, h1 #timestamp {
   font-size: 24.5px;
 }
 
 /* line 76, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h2 small, h2 h3, h2 .title, h2 .context, h2 #timestamp {
+h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print, h2 #timestamp {
   font-size: 17.5px;
 }
 
 /* line 77, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h3 small, h3 h3, h3 .title, h3 .context, h3 #timestamp {
+h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print, h3 #timestamp {
   font-size: 14px;
 }
 
 /* line 78, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4 small, h4 h3, h4 .title, h4 .context, h4 #timestamp {
+h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print, h4 #timestamp {
   font-size: 14px;
 }
 
@@ -980,13 +980,13 @@ blockquote p {
   line-height: 25px;
 }
 /* line 190, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote small, blockquote h3, blockquote .title, blockquote .context, blockquote #timestamp {
+blockquote small, blockquote .unimportant, blockquote .title, blockquote .context, blockquote #contact, blockquote #print, blockquote #timestamp {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 /* line 194, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote small:before, blockquote h3:before, blockquote .title:before, blockquote .context:before, blockquote #timestamp:before {
+blockquote small:before, blockquote .unimportant:before, blockquote .title:before, blockquote .context:before, blockquote #contact:before, blockquote #print:before, blockquote #timestamp:before {
   content: '\2014 \00A0';
 }
 /* line 200, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -1000,18 +1000,20 @@ blockquote.pull-right {
 /* line 207, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
 blockquote.pull-right p,
 blockquote.pull-right small,
-blockquote.pull-right h3,
+blockquote.pull-right .unimportant,
 blockquote.pull-right .title,
 blockquote.pull-right .context,
+blockquote.pull-right #contact,
+blockquote.pull-right #print,
 blockquote.pull-right #timestamp {
   text-align: right;
 }
 /* line 211, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote.pull-right small:before, blockquote.pull-right h3:before, blockquote.pull-right .title:before, blockquote.pull-right .context:before, blockquote.pull-right #timestamp:before {
+blockquote.pull-right small:before, blockquote.pull-right .unimportant:before, blockquote.pull-right .title:before, blockquote.pull-right .context:before, blockquote.pull-right #contact:before, blockquote.pull-right #print:before, blockquote.pull-right #timestamp:before {
   content: '';
 }
 /* line 214, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote.pull-right small:after, blockquote.pull-right h3:after, blockquote.pull-right .title:after, blockquote.pull-right .context:after, blockquote.pull-right #timestamp:after {
+blockquote.pull-right small:after, blockquote.pull-right .unimportant:after, blockquote.pull-right .title:after, blockquote.pull-right .context:after, blockquote.pull-right #contact:after, blockquote.pull-right #print:after, blockquote.pull-right #timestamp:after {
   content: '\00A0 \2014';
 }
 
@@ -1115,7 +1117,7 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 /* line 33, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-legend small, legend h3, legend .title, legend .context, legend #timestamp {
+legend small, legend .unimportant, legend .title, legend .context, legend #contact, legend #print, legend #timestamp {
   font-size: 15px;
   color: #999999;
 }
@@ -2423,7 +2425,7 @@ table th[class*="span"],
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(/images/glyphicons-halflings.png?1357276824);
+  background-image: url(/images/glyphicons-halflings.png?1357360523);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px;
@@ -2444,7 +2446,7 @@ table th[class*="span"],
 .dropdown-menu > .active > a > [class*=" icon-"],
 .dropdown-submenu:hover > a > [class^="icon-"],
 .dropdown-submenu:hover > a > [class*=" icon-"] {
-  background-image: url(/images/glyphicons-halflings-white.png?1357276824);
+  background-image: url(/images/glyphicons-halflings-white.png?1357360523);
 }
 
 /* line 48, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_sprites.scss */
@@ -6617,7 +6619,7 @@ a.label:hover, a.badge:hover {
   border-radius: 6px;
 }
 /* line 15, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_hero-unit.scss */
-.hero-unit h1, .hero-unit #name {
+.hero-unit h1 {
   margin-bottom: 0;
   font-size: 60px;
   line-height: 1;
@@ -7887,7 +7889,7 @@ a.label:hover, a.badge:hover {
   }
 
   /* line 129, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
-  .page-header h1 small, .page-header #name small, .page-header h1 h3, .page-header #name h3, .page-header h1 .title, .page-header #name .title, .page-header h1 .context, .page-header #name .context, .page-header h1 #timestamp, .page-header #name #timestamp {
+  .page-header h1 small, .page-header h1 .unimportant, .page-header h1 .title, .page-header h1 .context, .page-header h1 #contact, .page-header h1 #print, .page-header h1 #timestamp {
     display: block;
     line-height: 20px;
   }
@@ -8165,62 +8167,72 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-/* line 6, ../sass/screen.sass */
-a {
-  color: #333333;
-  color: black;
+/* line 9, ../sass/screen.sass */
+.unimportant, .title, .context, #contact, #print, #timestamp {
+  color: #999999;
 }
 
 /* line 13, ../sass/screen.sass */
+.unit, .position, .project {
+  margin: 0.5em 0;
+}
+
+/* line 16, ../sass/screen.sass */
+a {
+  color: black;
+}
+
+/* line 19, ../sass/screen.sass */
 ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 23, ../sass/screen.sass */
 li {
-  margin: 1px 5px 1px 0;
+  margin-right: 5%;
 }
 
-/* line 20, ../sass/screen.sass */
+/* line 27, ../sass/screen.sass */
 .container {
+  margin: 1em 0;
   position: relative;
-  margin-top: 1em;
-  margin-bottom: 2em;
 }
 
-/* line 26, ../sass/screen.sass */
-.position {
-  margin-top: 1em;
+/* line 45, ../sass/screen.sass */
+address {
+  margin: 0;
 }
 
-/* line 32, ../sass/screen.sass */
-.title {
-  color: #999999;
-}
-
-/* line 36, ../sass/screen.sass */
-.context {
-  color: #999999;
-}
-
-/* line 46, ../sass/screen.sass */
-#print {
+/* line 48, ../sass/screen.sass */
+.minor, #print, #timestamp {
   position: absolute;
-  bottom: 0px;
-  right: 2em;
+  top: 0;
+  right: 0;
 }
 
 /* line 53, ../sass/screen.sass */
+h1 {
+  margin-bottom: 5px;
+}
+
+/* line 56, ../sass/screen.sass */
+#contact {
+  margin-bottom: 10px;
+}
+/* line 60, ../sass/screen.sass */
+#contact li {
+  display: inline-block;
+  margin: 0 0.1em;
+}
+
+/* line 70, ../sass/screen.sass */
 #timestamp {
-  position: absolute;
-  bottom: 9px;
-  right: 1em;
   display: none;
 }
 
 @media (max-width: 767px) {
-  /* line 62, ../sass/screen.sass */
+  /* line 77, ../sass/screen.sass */
   .row-fluid [class*="span"] {
     width: 50%;
     float: left;
