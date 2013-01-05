@@ -706,7 +706,7 @@ p {
 }
 
 /* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-small, .unimportant, .title, .context, #contact, #print, #timestamp {
+small, .unimportant, .title, .context, #contact, #print-button, #timestamps {
   font-size: 85%;
 }
 
@@ -785,7 +785,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizelegibility;
 }
 /* line 57, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print, h1 #timestamp, h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print, h2 #timestamp, h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print, h3 #timestamp, h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print, h4 #timestamp, h5 small, h5 .unimportant, h5 .title, h5 .context, h5 #contact, h5 #print, h5 #timestamp, h6 small, h6 .unimportant, h6 .title, h6 .context, h6 #contact, h6 #print, h6 #timestamp {
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps, h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print-button, h2 #timestamps, h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print-button, h3 #timestamps, h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps, h5 small, h5 .unimportant, h5 .title, h5 .context, h5 #contact, h5 #print-button, h5 #timestamps, h6 small, h6 .unimportant, h6 .title, h6 .context, h6 #contact, h6 #print-button, h6 #timestamps {
   font-weight: normal;
   line-height: 1;
   color: #999999;
@@ -829,22 +829,22 @@ h6 {
 }
 
 /* line 75, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print, h1 #timestamp {
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps {
   font-size: 24.5px;
 }
 
 /* line 76, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print, h2 #timestamp {
+h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print-button, h2 #timestamps {
   font-size: 17.5px;
 }
 
 /* line 77, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print, h3 #timestamp {
+h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print-button, h3 #timestamps {
   font-size: 14px;
 }
 
 /* line 78, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print, h4 #timestamp {
+h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps {
   font-size: 14px;
 }
 
@@ -980,13 +980,13 @@ blockquote p {
   line-height: 25px;
 }
 /* line 190, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote small, blockquote .unimportant, blockquote .title, blockquote .context, blockquote #contact, blockquote #print, blockquote #timestamp {
+blockquote small, blockquote .unimportant, blockquote .title, blockquote .context, blockquote #contact, blockquote #print-button, blockquote #timestamps {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 /* line 194, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote small:before, blockquote .unimportant:before, blockquote .title:before, blockquote .context:before, blockquote #contact:before, blockquote #print:before, blockquote #timestamp:before {
+blockquote small:before, blockquote .unimportant:before, blockquote .title:before, blockquote .context:before, blockquote #contact:before, blockquote #print-button:before, blockquote #timestamps:before {
   content: '\2014 \00A0';
 }
 /* line 200, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
@@ -1004,16 +1004,16 @@ blockquote.pull-right .unimportant,
 blockquote.pull-right .title,
 blockquote.pull-right .context,
 blockquote.pull-right #contact,
-blockquote.pull-right #print,
-blockquote.pull-right #timestamp {
+blockquote.pull-right #print-button,
+blockquote.pull-right #timestamps {
   text-align: right;
 }
 /* line 211, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote.pull-right small:before, blockquote.pull-right .unimportant:before, blockquote.pull-right .title:before, blockquote.pull-right .context:before, blockquote.pull-right #contact:before, blockquote.pull-right #print:before, blockquote.pull-right #timestamp:before {
+blockquote.pull-right small:before, blockquote.pull-right .unimportant:before, blockquote.pull-right .title:before, blockquote.pull-right .context:before, blockquote.pull-right #contact:before, blockquote.pull-right #print-button:before, blockquote.pull-right #timestamps:before {
   content: '';
 }
 /* line 214, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote.pull-right small:after, blockquote.pull-right .unimportant:after, blockquote.pull-right .title:after, blockquote.pull-right .context:after, blockquote.pull-right #contact:after, blockquote.pull-right #print:after, blockquote.pull-right #timestamp:after {
+blockquote.pull-right small:after, blockquote.pull-right .unimportant:after, blockquote.pull-right .title:after, blockquote.pull-right .context:after, blockquote.pull-right #contact:after, blockquote.pull-right #print-button:after, blockquote.pull-right #timestamps:after {
   content: '\00A0 \2014';
 }
 
@@ -1117,7 +1117,7 @@ legend {
   border-bottom: 1px solid #e5e5e5;
 }
 /* line 33, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_forms.scss */
-legend small, legend .unimportant, legend .title, legend .context, legend #contact, legend #print, legend #timestamp {
+legend small, legend .unimportant, legend .title, legend .context, legend #contact, legend #print-button, legend #timestamps {
   font-size: 15px;
   color: #999999;
 }
@@ -7889,7 +7889,7 @@ a.label:hover, a.badge:hover {
   }
 
   /* line 129, ../../../../../Library/Ruby/Gems/1.8/gems/bootstrap-sass-2.2.2.0/vendor/assets/stylesheets/bootstrap/_responsive-767px-max.scss */
-  .page-header h1 small, .page-header h1 .unimportant, .page-header h1 .title, .page-header h1 .context, .page-header h1 #contact, .page-header h1 #print, .page-header h1 #timestamp {
+  .page-header h1 small, .page-header h1 .unimportant, .page-header h1 .title, .page-header h1 .context, .page-header h1 #contact, .page-header h1 #print-button, .page-header h1 #timestamps {
     display: block;
     line-height: 20px;
   }
@@ -8168,7 +8168,7 @@ a.label:hover, a.badge:hover {
   }
 }
 /* line 9, ../sass/screen.sass */
-.unimportant, .title, .context, #contact, #print, #timestamp {
+.unimportant, .title, .context, #contact, #print-button, #timestamps {
   color: #999999;
 }
 
@@ -8183,56 +8183,53 @@ a {
 }
 
 /* line 19, ../sass/screen.sass */
+h1 {
+  margin-bottom: 5px;
+}
+
+/* line 22, ../sass/screen.sass */
 ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 23, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 li {
   margin-right: 5%;
 }
 
-/* line 27, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 .container {
-  margin: 1em 0;
+  padding: 1em 0;
   position: relative;
 }
 
-/* line 45, ../sass/screen.sass */
-address {
-  margin: 0;
-}
-
-/* line 48, ../sass/screen.sass */
-.minor, #print, #timestamp {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-/* line 53, ../sass/screen.sass */
-h1 {
-  margin-bottom: 5px;
-}
-
-/* line 56, ../sass/screen.sass */
+/* line 47, ../sass/screen.sass */
 #contact {
   margin-bottom: 10px;
 }
-/* line 60, ../sass/screen.sass */
+/* line 51, ../sass/screen.sass */
 #contact li {
   display: inline-block;
   margin: 0 0.1em;
 }
 
-/* line 70, ../sass/screen.sass */
-#timestamp {
-  display: none;
+/* line 55, ../sass/screen.sass */
+#print-button {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+/* line 61, ../sass/screen.sass */
+#timestamps {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 767px) {
-  /* line 77, ../sass/screen.sass */
+  /* line 68, ../sass/screen.sass */
   .row-fluid [class*="span"] {
     width: 50%;
     float: left;

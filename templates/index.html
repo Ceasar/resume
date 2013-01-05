@@ -2,7 +2,7 @@
 {% block body %}
 <div class="container">
     <div class="row-fluid">
-        <div class="offset1 span11">
+        <div class="offset1 span10">
             <h1>Ceasar Bautista</h1>
             {% include "_contact.html" %}
         </div>
@@ -11,21 +11,30 @@
         <div id="history" class="offset1 span5">
             {% include "_employment.html" %}
         </div>
-        <div id="value" class="offset1 span5">
+        <div id="value" class="span5">
             {% include "_education.html" %}
             {% include "_projects.html" %}
             {% include "_skills.html" %}
         </div>
     </div>
-    <button id="print" class="btn" onclick="window.print()">Print</button>
-    <div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
+    <button id="print-button" class="btn" onclick="window.print()">Print</button>
+    <div id="timestamps">
+        <span>Accessed <span id="access_date"></span>.</span>
+        <span>Updated at <span id="updated_at"></span>.</span>
+    </div>
 </div>
 <script>
-    var d = new Date();
-    // month is 0-indexed
-    var month = d.getMonth() + 1;
-    var day = d.getDate();
-    var year = d.getFullYear();
-    $('#access_date').text(month + "/" + day + "/" + year);
+    var printDate = function (d) {
+        // month is 0-indexed
+        var month = d.getMonth() + 1;
+        var day = d.getDate();
+        var year = d.getFullYear();
+        return month + "/" + day + "/" + year;
+    }
+    $('#access_date').text(printDate(new Date()));
+
+    $.getJSON("https://api.github.com/repos/Ceasar/resume?callback=?", function(data) {
+        $("#updated_at").text(printDate(new Date(data.data.updated_at)));
+    });
 </script>
 {% endblock %}
