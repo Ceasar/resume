@@ -1,34 +1,12 @@
 <div class="section" id="projects">
-    <div class="page-header">
-        <h1>Projects
-            <small><a href="http://github.com/Ceasar">github.com/Ceasar</a></small>
-        </h1>
-    </div>
-    <div class="row">
-        <div class="span4">
-            <h2>staticjinja</h2>
-            <h4>Fall 2012</h4>
-            <p>Library to easily deploy static sites using the extremely handy jinja2 templating language.</p>
-            <small><a href="https://github.com/Ceasar/staticjinja">github.com/Ceasar/staticjinja</a></small>
+    <h4><a href="http://github.com/Ceasar">Projects</a></h4>
+    <div id="projects">
+        {% for project in projects %}
+        <div class="project contextual">
+            <div class="name"><a href="{{ project.href }}">{{ project.name }}</a></div>
+            <div class="context">{{ project.when }}</div>
+            <p>{{ project.what }}</p>
         </div>
-        <div class="span4">
-            <h2>pep8fix</h2>
-            <h4>Ongoing</h4>
-            <p>Script to force Python files to adhere to PEP8 style guide by scanning them and correcting violations.</p>
-            <small><a href="https://github.com/Ceasar/pep8fix">github.com/Ceasar/pep8fix</a></small>
-        </div>
-        <div class="span4">
-            <h2>Regex Parser</h2>
-            <h4>Spring 2012</h4>
-            <p>Haskell regular expression parser. Uses a nondeterministic finite automaton (NFA) and parse trees to match regexs.</p>
-            <small><a href="https://github.com/Ceasar/CIS-194-Automata">github.com/Ceasar/CIS-194-Automata</a></small>
-        </div>
-        <div class="span4">
-            <h3>Mini-Projects</h3>
-            <ul>
-                <li><strong>Nonsense</strong> - Minimalist Python Markov Chain library. <a href="https://github.com/Ceasar/Nonsense">github.com/Ceasar/Nonsense</a></li>
-                <li><strong>pyDbC</strong> - Design by Contract library for Python. <a href="https://github.com/Ceasar/pyDbC">github.com/Ceasar/pyDbC</a></li>
-            </ul>
-        </div>
+        {% endfor %}
     </div>
 </div>

@@ -1,0 +1,17 @@
+<div class="section" id="employment">
+    <h4>Employment</h4>
+    <div class="positions">
+        {% for position in positions %}
+            <div class="position contextual">
+                <div class="name"><a href="{{ position.href }}">{{ position.company }}</a></div>
+                <div class="title">{{ position.title }}</div>
+                <div class="context">{{ position.start }} - {{ position.end }}</div>
+                <ul>
+                    {% for item in position.what %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,38 @@
+[
+    {
+        "company": "PennApps Labs",
+        "title": "Software Engineer",
+        "href": "labs.pennapps.com",
+        "start": "March 2011",
+        "end": "Present",
+        "where": "Philadelphia",
+        "what": [
+            "Open-sourced a lazy Python <a href='http://github.com/pennappslabs/penncoursereview-sdk-python'>wrapper for the Penn Course Review API</a>.",
+            "Constructed the <a href='http://penncoursereview.com'>PennCourseReview front-end website</a>.",
+            "Constructed the <a href=''>Penn Common Funding Application</a> which lets students apply for funding for group events online."
+        ]
+    }, {
+        "company": "Lore",
+        "title": "Software Engineer, Intern",
+        "href": "lore.com",
+        "start": "May 2012",
+        "end": "August 2012",
+        "where": "New York City",
+        "what": [
+            "Worked closely with designers to translate design specs for the user dashboard, 'focus mode' modal, and 'we bar' (chat bar), into working products.",
+            "Wrote automated, cloud-based, cross-browser tests to test critical parts of the website.",
+            "Integrated Mixpanel analytics to track user behavior."
+        ]
+    }, {
+        "company": "CIS 192 (Python)",
+        "title": "Teaching Assistant",
+        "href": "",
+        "start": "January 2012",
+        "end": "May 2012",
+        "where": "Philadelphia",
+        "what": [
+            "Redesigned and implemented the <a href='http://github.com/CIS192/grader'>grading tool</a> on top of the internals of Python's unittest library.",
+            "Designed assignments, covered lectures, assisted students with assignments, and reimplemented submission shell scripts in Python."
+        ]
+    }
+]

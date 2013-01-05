@@ -12,9 +12,8 @@
         <![endif]-->
 
         <!-- Le styles -->
-        <link href="./bootstrap.css" rel="stylesheet">
-        <link href="./screen.css" rel="stylesheet" media="screen">
-        <link href="./print.css" rel="stylesheet" media="print">
+        <link href="./static/stylesheets/screen.css" rel="stylesheet" media="screen">
+        <link href="./static/stylesheets/print.css" rel="stylesheet" media="print">
 
         <!-- Le fav and touch icons -->
         <link rel="shortcut icon" href="images/favicon.ico">
@@ -28,137 +27,130 @@
     <body>
         
 <div class="container">
-    <h1>Ceasar Bautista</h1>
     <button id="print" class="btn" onclick="window.print()">Print</button>
-    <div class="section" id="skills">
-    <div class="page-header">
-        <h1>Skills</h1>
+    <h1>Ceasar Bautista</h1>
+    <div class="row-fluid">
+        <div id="contact" class="section span6">
+    <address>
+        <div id="email">cbautista2010@gmail.com</div>
+        <div id="mobile">(702) 979 4316</div>
+        <div id="address">Philadelphia, PA</div>
+    </address>
+</div>
     </div>
-    <div class="row">
-        <div class="span12">
-            <ul>
-                <li>Languages (in decreasing strength): Python, Haskell, CoffeeScript / Javascript, C, C++, Java</li>
-                <li>Technologies: Git, SASS / CSS, SQL, Unix, jQuery, Flask, Django</li>
-            </ul>
-        </div>
+    <div id="main" class="row-fluid">
+        <div id="history" class="span6">
+        <div class="section" id="employment">
+    <h4>Employment</h4>
+    <div class="positions">
+        
+            <div class="position contextual">
+                <div class="name"><a href="labs.pennapps.com">PennApps Labs</a></div>
+                <div class="title">Software Engineer</div>
+                <div class="context">March 2011 - Present</div>
+                <ul>
+                    
+                    <li>Open-sourced a lazy Python <a href='http://github.com/pennappslabs/penncoursereview-sdk-python'>wrapper for the Penn Course Review API</a>.</li>
+                    
+                    <li>Constructed the <a href='http://penncoursereview.com'>PennCourseReview front-end website</a>.</li>
+                    
+                    <li>Constructed the <a href=''>Penn Common Funding Application</a> which lets students apply for funding for group events online.</li>
+                    
+                </ul>
+            </div>
+        
+            <div class="position contextual">
+                <div class="name"><a href="lore.com">Lore</a></div>
+                <div class="title">Software Engineer, Intern</div>
+                <div class="context">May 2012 - August 2012</div>
+                <ul>
+                    
+                    <li>Worked closely with designers to translate design specs for the user dashboard, 'focus mode' modal, and 'we bar' (chat bar), into working products.</li>
+                    
+                    <li>Wrote automated, cloud-based, cross-browser tests to test critical parts of the website.</li>
+                    
+                    <li>Integrated Mixpanel analytics to track user behavior.</li>
+                    
+                </ul>
+            </div>
+        
+            <div class="position contextual">
+                <div class="name"><a href="">CIS 192 (Python)</a></div>
+                <div class="title">Teaching Assistant</div>
+                <div class="context">January 2012 - May 2012</div>
+                <ul>
+                    
+                    <li>Redesigned and implemented the <a href='http://github.com/CIS192/grader'>grading tool</a> on top of the internals of Python's unittest library.</li>
+                    
+                    <li>Designed assignments, covered lectures, assisted students with assignments, and reimplemented submission shell scripts in Python.</li>
+                    
+                </ul>
+            </div>
+        
     </div>
 </div>
-    <div class="section" id="projects">
-    <div class="page-header">
-        <h1>Projects
-            <small><a href="http://github.com/Ceasar">github.com/Ceasar</a></small>
-        </h1>
-    </div>
-    <div class="row">
-        <div class="span4">
-            <h2>staticjinja</h2>
-            <h4>Fall 2012</h4>
-            <p>Library to easily deploy static sites using the extremely handy jinja2 templating language.</p>
-            <small><a href="https://github.com/Ceasar/staticjinja">github.com/Ceasar/staticjinja</a></small>
         </div>
-        <div class="span4">
-            <h2>pep8fix</h2>
-            <h4>Ongoing</h4>
-            <p>Script to force Python files to adhere to PEP8 style guide by scanning them and correcting violations.</p>
-            <small><a href="https://github.com/Ceasar/pep8fix">github.com/Ceasar/pep8fix</a></small>
+        <div id="value" class="offset1 span4">
+        <div class="section" id="projects">
+    <h4><a href="http://github.com/Ceasar">Projects</a></h4>
+    <div id="projects">
+        
+        <div class="project contextual">
+            <div class="name"><a href="https://github.com/Ceasar/staticjinja">staticjinja</a></div>
+            <div class="context">Fall 2012</div>
+            <p>Effortlessly deploy static sites.</p>
         </div>
-        <div class="span4">
-            <h2>Regex Parser</h2>
-            <h4>Spring 2012</h4>
-            <p>Haskell regular expression parser. Uses a nondeterministic finite automaton (NFA) and parse trees to match regexs.</p>
-            <small><a href="https://github.com/Ceasar/CIS-194-Automata">github.com/Ceasar/CIS-194-Automata</a></small>
+        
+        <div class="project contextual">
+            <div class="name"><a href="https://github.com/Ceasar/pep8fix">pep8fix</a></div>
+            <div class="context">Ongoing</div>
+            <p>Correct Python files that don't adhere to PEP8.</p>
         </div>
-        <div class="span4">
-            <h3>Mini-Projects</h3>
-            <ul>
-                <li><strong>Nonsense</strong> - Minimalist Python Markov Chain library. <a href="https://github.com/Ceasar/Nonsense">github.com/Ceasar/Nonsense</a></li>
-                <li><strong>pyDbC</strong> - Design by Contract library for Python. <a href="https://github.com/Ceasar/pyDbC">github.com/Ceasar/pyDbC</a></li>
-            </ul>
+        
+        <div class="project contextual">
+            <div class="name"><a href="https://github.com/Ceasar/regex">regex</a></div>
+            <div class="context">Spring 2012</div>
+            <p>Haskell regular expression matcher.</p>
         </div>
+        
     </div>
 </div>
-    <div class="section" id="employment">
-    <div class="page-header">
-        <h1>Employment</h1>
-    </div>
-    <div class="row">
-        <div class="span6">
-            <h2>PennApps Labs <small><a href="http://labs.pennapps.com/">labs.pennapps.com</a></small></h2>
-            <h3>Software Engineer</h3>
-            <h4>March 2011 - Current | Philadelphia</h4>
-        </div>
-        <div class="span9">
-            <ul>
-                <li>Open-sourced a lazy Python wrapper for the Penn Course Review API. <a href="https://github.com/pennappslabs/penncoursereview-sdk-python">github.com/pennappslabs/penncoursereview-sdk-python</a></li>
-                <li>Constructed the PennCourseReview front-end website (using the Penn Course Review API). <a href="https://beta.penncoursereview.com/">penncoursereview.com</a></li>
-                <li>Constructed a web application that lets students apply for funding for group events online.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span6">
-            <h2>Lore <small><a href="http://lore.com/">lore.com</a></small></h2>
-            <h3>Software Engineer, Intern</h3>
-            <h4>Summer 2012 | New York City</h4>
-        </div>
-        <div class="span8">
-            <ul>
-                <li>Worked closely with designers to translate design specs for the user dashboard, "focus mode" modal, and "we bar" (chat bar), into working products.</li>
-                <li>Wrote automated, cloud-based, cross-browser tests to test critical parts of the website.</li>
-                <li>Integrated Mixpanel analytics to track user behavior.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span6">
-            <h2>CIS 192 (Python)</h2>
-            <h3>Teaching Assistant</h3>
-            <h4>January 2012 - Spring 2012 | Philadelphia</h4>
-        </div>
-        <div class="span9">
-            <ul>
-                <li>Redesigned and implemented the grading tool on top of the internals of Python's unittest library <a href="https://github.com/CIS192/grader">github.com/CIS192/grader</a>.</li>
-                <li>Designed assignments, covered a lecture, assisted students with assignments, and converted submission shell scripts into Python.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span6">
-            <h2>The Daily Pennsylvanian</h2>
-            <h3>Senior Web Developer</h3>
-            <h4>January 2011 - Spring 2012 | Philadelphia</h4>
-        </div>
-        <div class="span9">
-            <ul>
-                <li>Awarded "Web Developer of the Year" for 2011.</li>
-                <li>Designed and constructed a web version of the Daily Pennsylvania's Dining Guide, including  plotting the locations of each reviewed restaurant on a map and letting the user filter the restaurants with tags.</li>
-                <li>Built a job assignment database to help editors assign jobs to photographers, replacing an antiquated and messy email system.</li>
-            </ul>
-        </div>
+        <div class="section" id="education">
+    <h4>Education</h4>
+    <div class="contextual">
+        <div class="name">University of Pennsylvania</div>
+        <div class="title">(Expected) BSE in Computer Science</div>
+        <div class="context">Fall 2010 - Spring 2014</div>
+        <ul>
+            <li>CS Junior seeking summer internship.</li>
+            <li>Coursework: Advanced Functional Programming, Operating Systems, Algorithms, Software Engineering, Databases, AI, Recursion, Cloud Computing, Python, Haskell, Unix, C++</li>
+        </ul>
     </div>
 </div>
-    <div class="section" id="education">
-    <div class="page-header">
-        <h1>Education</h1>
+        <div class="section row-fluid" id="skills">
+    <div id="technologies" class="span6">
+        <h4>Technologies</h4>
+        <ul>
+            <li>SASS / CSS</li>
+            <li>jQuery</li>
+            <li>Flask / Django</li>
+            <li>SQL</li>
+            <li>Unix / Git</li>
+        </ul>
     </div>
-    <div class="row">
-        <div class="span6">
-            <h2>University of Pennsylvania</h2>
-            <h3>(Expected) BSE in Computer Science</h3>
-            <h4>Fall 2010 - Spring 2014 | Philadelphia</h4>
-        </div>
-        <div class="span9">
-            <ul>
-                <li>CS Junior seeking summer internship. Interested in web development and entrepreneurship.</li>
-                <li>Coursework: Computer Architecture, Databases, AI, Scalable and Cloud Computing, Python, Algorithms, Software Engineering, Haskell, Unix</li>
-                <li>Studying: Operating Systems, Mathematics of Recursion, Advanced Functional Programming, C/C++</li>
-            </ul>
-        </div>
+    <div id="languages" class="span6">
+        <h4>Languages</h4>
+        <ul>
+            <li><strong>Python</strong></li>
+            <li>Haskell</li>
+            <li>CoffeeScript</li>
+        </ul>
     </div>
 </div>
-    <footer>
-<p>cbautista2010@gmail.com | (702) 979-4316 | Philadelphia, PA</p>
-<div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
+        </div>
+    </div>
+    <div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
+</div>
 <script>
     var d = new Date();
     // month is 0-indexed
@@ -167,8 +159,6 @@
     var year = d.getFullYear();
     $('#access_date').text(month + "/" + day + "/" + year);
 </script>
-</footer>
-</div>
 
     </body>
 </html>

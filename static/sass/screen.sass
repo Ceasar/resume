@@ -1,0 +1,61 @@
+@import "bootstrap"
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive"
+
+a
+    color: $grayDark
+    color: black
+
+ul
+    list-style: none
+    margin: 0
+
+li
+    margin: 1px 5px 1px 0
+
+.container
+    // Used for timestamp
+    position: relative
+    margin-top: 1em
+    margin-bottom: 2em
+
+.position
+    margin-top: 1em
+
+.name
+    @extend strong
+
+.title
+    color: $grayLight
+    @extend small
+
+.context
+    color: $grayLight
+    @extend small
+
+#name
+    @extend h1
+
+#projects
+
+// print button
+#print
+    position: absolute
+    bottom: 0px
+    right: 2em
+    // display: none
+
+
+#timestamp
+    @extend small
+    position: absolute
+    bottom: 9px
+    right: 1em
+    display: none
+
+
+@media (max-width: 767px)
+    .row-fluid [class*="span"]
+        width: 50%
+        float: left

@@ -1,12 +1,29 @@
 {% extends "_base.html" %}
 {% block body %}
 <div class="container">
-    <h1>Ceasar Bautista</h1>
     <button id="print" class="btn" onclick="window.print()">Print</button>
-    {% include "_skills.html" %}
-    {% include "_projects.html" %}
-    {% include "_work.html" %}
-    {% include "_education.html" %}
-    {% include "_contact.html" %}
+    <h1>Ceasar Bautista</h1>
+    <div class="row-fluid">
+        {% include "_contact.html" %}
+    </div>
+    <div id="main" class="row-fluid">
+        <div id="history" class="span6">
+        {% include "_employment.html" %}
+        </div>
+        <div id="value" class="offset1 span4">
+        {% include "_projects.html" %}
+        {% include "_education.html" %}
+        {% include "_skills.html" %}
+        </div>
+    </div>
+    <div id="timestamp"><span>Accessed <span id="access_date"></span></span></div>
 </div>
+<script>
+    var d = new Date();
+    // month is 0-indexed
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+    var year = d.getFullYear();
+    $('#access_date').text(month + "/" + day + "/" + year);
+</script>
 {% endblock %}
