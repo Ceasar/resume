@@ -25,4 +25,4 @@ if __name__ == "__main__":
             ('index.html', index_context),
         ],
     )
-    renderer.run(debug=True)
+    renderer.run()

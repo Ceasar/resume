@@ -59,6 +59,8 @@
                 );
             }
         });
+    $.getJSON("https://api.github.com/repos/{{ identity.github }}/resume?callback=?", function(data) {
+        $("#updated_at").text(printDate(new Date(data.data.updated_at)));
     });
 </script>
 {% endblock %}
