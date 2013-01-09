@@ -1,14 +1,24 @@
-Info
-====
+# Overview
 
-My resume, managed with Git, displayed with Bootstrap.
+My [resume](http://ceasar.github.com/resume/), managed with Git, styled with Bootstrap.
 
-Set Up
-======
+## Features
 
-Just follow the directions at [Github Pages](http://help.github.com/pages/#project_pages_manually) to set up the repo. (Make sure to call it "resume".) You'll of course need bootstrap.css if you're lazy like myself.
+- Fluid layout
+- Print button in screen version
+- Dynamic access and update date
+- Data separated from html
 
-Converting to PDF
-=================
+# Installation
 
-To convert the web page to a PDF, the best way I've found is just to print to PDF (making sure to uncheck headers and footers).
+`pip install -r requirements.txt`
+
+# Quickstart
+
+To compile the templates into the resume, run `python build.py`. This will automatically watch the templates for changes and rebuild the resume on change.
+
+My ruby is a little weak, but to compile the sass to css requires [compass](http://compass-style.org/) (this is because the sass requires bootstrap-sass which requires compass). Once installed, run `compass watch static` and it will watch for any changes and update the css accordingly.
+
+# Converting to PDF
+
+To convert the web page to a PDF, the best way I've found is just to print to PDF (making sure to uncheck headers and footers). A print button is on the screen version of the resume for convenience.
