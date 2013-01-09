@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row-fluid">
         <div class="offset1 span10">
-            <h1>Ceasar Bautista</h1>
+            <h1>{{ identity.name }}</h1>
             {% include "_contact.html" %}
         </div>
     </div>
@@ -33,7 +33,7 @@
     }
     $('#access_date').text(printDate(new Date()));
 
-    $.getJSON("https://api.github.com/repos/Ceasar/resume?callback=?", function(data) {
+    $.getJSON("https://api.github.com/repos/{{ identity.github }}/resume?callback=?", function(data) {
         $("#updated_at").text(printDate(new Date(data.data.updated_at)));
     });
 </script>
