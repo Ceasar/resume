@@ -1,2 +1,8 @@
 <div class="section row-fluid" id="skills">
+    <div id="skills" class="span6">
+        <h4>Skills</h4>
+        <ul>
+            {% for skill in skills %} <li>{{ skill.name }}</li>{% endfor %}
+        </ul>
+    </div>
 </div>
