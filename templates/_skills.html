@@ -2,19 +2,13 @@
     <div id="technologies" class="span6">
         <h4>Technologies</h4>
         <ul>
-            <li>SASS / CSS</li>
-            <li>jQuery</li>
-            <li>Flask / Django</li>
-            <li>SQL</li>
-            <li>Unix / Git</li>
+            {% for t in technologies %} <li>{{ t.name }}</li>{% endfor %}
         </ul>
     </div>
     <div id="languages" class="span6">
         <h4>Languages</h4>
         <ul>
-            <li><strong>Python</strong></li>
-            <li>Haskell</li>
-            <li>CoffeeScript</li>
+            {% for l in languages %} <li>{{ l.name }}</li>{% endfor %}
         </ul>
     </div>
 </div>
