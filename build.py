@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+from staticjinja import make_renderer
+>>>>>>> Updated build to use staticjinja 0.1.3
 import json
 
 from staticjinja import make_renderer
@@ -14,8 +18,7 @@ def index_context():
         "identity": get_data("data/identity.json"),
         "projects": get_data("data/projects.json"),
         "positions": get_data("data/positions.json"),
-        "languages": get_data("data/languages.json"),
-        "technologies": get_data("data/technologies.json"),
+        "skills": get_data("data/skills.json"),
     }
 
 
