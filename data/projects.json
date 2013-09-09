@@ -1,2 +1,33 @@
 [
+    {
+        "name": "juicer",
+        "what": "Create 2D animations in your browser.",
+        "when": "Summer 2013",
+        "href": "http://fast-headland-5085.herokuapp.com/"
+    }, {
+        "name": "dots",
+        "what": "Easily manage and share dotfiles.",
+        "when": "Spring 2013",
+        "href": "https://github.com/Ceasar/dots"
+    }, {
+        "name": "sudoku",
+        "what": "Sudoku solver and generator.",
+        "when": "Winter 2012",
+        "href": "https://github.com/Ceasar/sudoku"
+    }, {
+        "name": "staticjinja",
+        "what": "Effortlessly deploy static sites.",
+        "when": "Fall 2012",
+        "href": "https://github.com/Ceasar/staticjinja"
+    }, {
+        "name": "raidcloud",
+        "what": "Combine multiple cloud storage services into one.",
+        "when": "Summer 2012",
+        "href": "http://raidcloud.herokuapp.com/"
+    }, {
+        "name": "regex",
+        "what": "Haskell regular expression matcher.",
+        "when": "Spring 2012",
+        "href": "https://github.com/Ceasar/regex"
+    }
 ]

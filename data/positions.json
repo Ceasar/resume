@@ -1,1 +1,39 @@
-[]
+[
+    {
+        "company": "Facebook",
+        "title": "Software Engineer Intern",
+        "href": "http://facebook.com",
+        "start": "May 2013",
+        "end": "July 2013",
+        "where": "Menlo Park, CA",
+        "what": [
+            "Worked on a team of five engineers on the Email, SMS, and Push Notifications (ESPN) Team (under Growth) to optimize Daily Active Users (DAU) by A/B testing notifications.",
+            "Conducted A/B Tests for People You May Know notifications sent to users who have not logged in recently, copy on friend activity notifications, and types of friend activity notifications.",
+            "Improved internal infrastructure. Overhauled legacy code, increased test coverage, and documented tools."
+        ]
+    }, {
+        "company": "PennApps Labs",
+        "title": "Software Engineer",
+        "href": "http://labs.pennapps.com",
+        "start": "March 2011",
+        "end": "Present",
+        "where": "Philadelphia, PA",
+        "what": [
+            "Worked with several developers to construct a campus events aggregator for Penn. Implemented the API endpoints, authentication logic, sessions, and text search using Flask and MongoDB.",
+            "Implemented and open-sourced the <a href='http://github.com/pennappslabs/penncoursereview-sdk-python'>Python SDK for the Penn Course Review API</a>.",
+            "Implemented the business logic for the <a href='http://penncoursereview.com'>PennCourseReview</a> website using Django."
+        ]
+    }, {
+        "company": "Lore",
+        "title": "Software Engineer, Intern",
+        "href": "http://lore.com",
+        "start": "May 2012",
+        "end": "August 2012",
+        "where": "New York City",
+        "what": [
+            "Worked closely with designers to implement functional specs for the user dashboard, 'focus mode' modal, and chat bar using Coffeescript and Sass.",
+            "Wrote cloud-based cross-browser tests to test critical functionality using Selenium.",
+            "Integrated Mixpanel analytics across the site to track user behavior."
+        ]
+    }
+]

@@ -2,9 +2,9 @@
     <h4><a href="http://github.com/Ceasar">Projects</a></h4>
     <div id="projects">
         {% for project in projects %}
-        <div class="project contextual">
-            <div class="name"><a href="{{ project.href }}">{{ project.name }}</a></div>
-            <div class="context">{{ project.when }}</div>
+        <div class="project">
+            <h5 class="name"><a href="{{ project.href }}">{{ project.name }}</a> </h5>
+            <small>{{ project.when }}</small>
             <p>{{ project.what }}</p>
         </div>
         {% endfor %}

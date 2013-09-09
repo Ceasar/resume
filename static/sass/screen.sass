@@ -19,30 +19,45 @@ a
 h1
     margin-bottom: 5px
 
+h5
+    margin: 0
+
 ul
-    list-style: none
+    // list-style: none
     margin: 0
 
 li
     // Give the right column some space
     margin-right: 5%
 
+header
+    overflow: auto
+
 .container
     padding: 1em 0
     // Used for timestamp
     position: relative
 
-.position, .project
+.experience, .project
     @extend .unit
 
-.name
+.position
+    float: left
+
+.job
+    overflow: auto
+
+.company
     @extend .important
 
 .title
     @extend .unimportant
+    color: black
+    line-height: 18px
 
 .context
     @extend .unimportant
+    line-height: 18px
 
 #contact
     @extend .unimportant
@@ -61,8 +76,8 @@ li
 #timestamps
     @extend .unimportant
     position: absolute
-    bottom: 0
-    right: 0
+    bottom: 1%
+    right: 1%
 
 @media (max-width: 767px)
     .row-fluid [class*="span"]
