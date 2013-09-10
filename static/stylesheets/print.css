@@ -8209,7 +8209,7 @@ header {
 
 /* line 36, ../sass/screen.sass */
 .container {
-  padding: 1em 0;
+  padding: 0.5em 0;
   position: relative;
 }
 
