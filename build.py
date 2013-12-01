@@ -1,6 +1,6 @@
 import json
 
-from staticjinja import Renderer
+from staticjinja import make_renderer
 
 
 def get_data(filename):
@@ -20,7 +20,7 @@ def index_context():
 
 
 if __name__ == "__main__":
-    renderer = Renderer(
+    renderer = make_renderer(
         contexts=[
             ('index.html', index_context),
         ],
