@@ -1,28 +1,23 @@
 [
     {
         "name": "twosheds",
-        "what": "Extensible pure-Python shell.",
-        "when": "Fall 2013. Active.",
+        "what": "Write your own shell, in Python.",
         "href": "https://github.com/Ceasar/twosheds"
     }, {
         "name": "staticjinja",
         "what": "Effortlessly deploy static sites.",
-        "when": "Fall 2012. Active.",
         "href": "https://github.com/Ceasar/staticjinja"
     }, {
-        "name": "dots",
-        "what": "Easily manage and share dotfiles.",
-        "when": "Spring 2013",
-        "href": "https://github.com/Ceasar/dots"
+        "name": "Encyclopedia",
+        "what": "Tools for managing a personal encyclopedia",
+        "href": "https://github.com/Ceasar/Encyclopedia"
     }, {
-        "name": "raidcloud",
-        "what": "Combine multiple cloud storage services into one.",
-        "when": "Summer 2012",
-        "href": "http://raidcloud.herokuapp.com/"
+        "name": "LisPy",
+        "what": "Lisp interpreter in Python",
+        "href": "https://github.com/Ceasar/LisPy"
     }, {
         "name": "regex",
         "what": "Haskell regular expression matcher.",
-        "when": "Spring 2012",
         "href": "https://github.com/Ceasar/regex"
     }
 ]
