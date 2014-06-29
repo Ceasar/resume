@@ -15,8 +15,8 @@
     </div>
     <button id="print-button" class="btn" onclick="window.print()">Print</button>
     <div id="timestamps">
-        <span>Updated <span id="updated_at"></span>.</span>
         <span>Accessed <span id="access_date"></span>.</span>
+        <span id="updated_at"></span>
         <span>ceasarbautista.com/resume</span>
     </div>
 </div>
@@ -37,7 +37,10 @@
     }
 
     getRepo("resume", function(resp) {
-        $("#updated_at").text(printDate(new Date(resp.data.updated_at)));
+        if (resp.meta.status !== 403) {
+            $("#updated_at").text(
+                "Updated " + printDate(new Date(resp.data.updated_at))) + ".";
+        }
     });
 
     var projects = [
@@ -45,12 +48,16 @@
         "{{project.name}}"{% if not loop.last %},{% endif %}
     {%endfor %}
     ];
-    var stargazers_count;
+    var forks_count, stargazers_count;
     $.each(projects, function(index, project) {
         getRepo(project, function(resp) {
-            stargazers_count = resp.data.stargazers_count;
-            $("#" + project + " .stars").text("Stars: " + stargazers_count);
-            console.log(resp);
+            if (resp.meta.status !== 403) {
+                forks_count = resp.data.forks_count || 0;
+                stargazers_count = resp.data.stargazers_count || 0;
+                $("#" + project + " .meta").text(
+                    "Forks: " + forks_count + ", Stars: " + stargazers_count
+                );
+            }
         });
     });
 </script>

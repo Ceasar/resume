@@ -90,7 +90,7 @@ mark {
 }
 
 /* line 151, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_normalize.scss */
-small, .unimportant, .title, .context, #contact, #print-button, #timestamps {
+small, .unimportant, .title, .context, #contact, #print-button, #timestamps, .meta {
   font-size: 80%;
 }
 
@@ -1523,12 +1523,12 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 /* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps,
-h1 .small, h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print-button, h2 #timestamps,
-h2 .small, h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print-button, h3 #timestamps,
-h3 .small, h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps,
-h4 .small, h5 small, h5 .unimportant, h5 .title, h5 .context, h5 #contact, h5 #print-button, h5 #timestamps,
-h5 .small, h6 small, h6 .unimportant, h6 .title, h6 .context, h6 #contact, h6 #print-button, h6 #timestamps,
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps, h1 .meta,
+h1 .small, h2 small, h2 .unimportant, h2 .title, h2 .context, h2 #contact, h2 #print-button, h2 #timestamps, h2 .meta,
+h2 .small, h3 small, h3 .unimportant, h3 .title, h3 .context, h3 #contact, h3 #print-button, h3 #timestamps, h3 .meta,
+h3 .small, h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps, h4 .meta,
+h4 .small, h5 small, h5 .unimportant, h5 .title, h5 .context, h5 #contact, h5 #print-button, h5 #timestamps, h5 .meta,
+h5 .small, h6 small, h6 .unimportant, h6 .title, h6 .context, h6 #contact, h6 #print-button, h6 #timestamps, h6 .meta,
 h6 .small,
 .h1 small,
 .h1 .unimportant,
@@ -1537,11 +1537,12 @@ h6 .small,
 .h1 #contact,
 .h1 #print-button,
 .h1 #timestamps,
-.h1 .small, .h2 small, .h2 .unimportant, .h2 .title, .h2 .context, .h2 #contact, .h2 #print-button, .h2 #timestamps,
-.h2 .small, .h3 small, .h3 .unimportant, .h3 .title, .h3 .context, .h3 #contact, .h3 #print-button, .h3 #timestamps,
-.h3 .small, .h4 small, .h4 .unimportant, .h4 .title, .h4 .context, .h4 #contact, .h4 #print-button, .h4 #timestamps,
-.h4 .small, .h5 small, .h5 .unimportant, .h5 .title, .h5 .context, .h5 #contact, .h5 #print-button, .h5 #timestamps,
-.h5 .small, .h6 small, .h6 .unimportant, .h6 .title, .h6 .context, .h6 #contact, .h6 #print-button, .h6 #timestamps,
+.h1 .meta,
+.h1 .small, .h2 small, .h2 .unimportant, .h2 .title, .h2 .context, .h2 #contact, .h2 #print-button, .h2 #timestamps, .h2 .meta,
+.h2 .small, .h3 small, .h3 .unimportant, .h3 .title, .h3 .context, .h3 #contact, .h3 #print-button, .h3 #timestamps, .h3 .meta,
+.h3 .small, .h4 small, .h4 .unimportant, .h4 .title, .h4 .context, .h4 #contact, .h4 #print-button, .h4 #timestamps, .h4 .meta,
+.h4 .small, .h5 small, .h5 .unimportant, .h5 .title, .h5 .context, .h5 #contact, .h5 #print-button, .h5 #timestamps, .h5 .meta,
+.h5 .small, .h6 small, .h6 .unimportant, .h6 .title, .h6 .context, .h6 #contact, .h6 #print-button, .h6 #timestamps, .h6 .meta,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
@@ -1556,8 +1557,8 @@ h3, .h3 {
   margin-bottom: 10px;
 }
 /* line 31, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps,
-h1 .small, .h1 small, .h1 .unimportant, .h1 .title, .h1 .context, .h1 #contact, .h1 #print-button, .h1 #timestamps,
+h1 small, h1 .unimportant, h1 .title, h1 .context, h1 #contact, h1 #print-button, h1 #timestamps, h1 .meta,
+h1 .small, .h1 small, .h1 .unimportant, .h1 .title, .h1 .context, .h1 #contact, .h1 #print-button, .h1 #timestamps, .h1 .meta,
 .h1 .small,
 h2 small,
 h2 .unimportant,
@@ -1566,7 +1567,8 @@ h2 .context,
 h2 #contact,
 h2 #print-button,
 h2 #timestamps,
-h2 .small, .h2 small, .h2 .unimportant, .h2 .title, .h2 .context, .h2 #contact, .h2 #print-button, .h2 #timestamps,
+h2 .meta,
+h2 .small, .h2 small, .h2 .unimportant, .h2 .title, .h2 .context, .h2 #contact, .h2 #print-button, .h2 #timestamps, .h2 .meta,
 .h2 .small,
 h3 small,
 h3 .unimportant,
@@ -1575,7 +1577,8 @@ h3 .context,
 h3 #contact,
 h3 #print-button,
 h3 #timestamps,
-h3 .small, .h3 small, .h3 .unimportant, .h3 .title, .h3 .context, .h3 #contact, .h3 #print-button, .h3 #timestamps,
+h3 .meta,
+h3 .small, .h3 small, .h3 .unimportant, .h3 .title, .h3 .context, .h3 #contact, .h3 #print-button, .h3 #timestamps, .h3 .meta,
 .h3 .small {
   font-size: 65%;
 }
@@ -1588,8 +1591,8 @@ h6, .h6 {
   margin-bottom: 10px;
 }
 /* line 42, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps,
-h4 .small, .h4 small, .h4 .unimportant, .h4 .title, .h4 .context, .h4 #contact, .h4 #print-button, .h4 #timestamps,
+h4 small, h4 .unimportant, h4 .title, h4 .context, h4 #contact, h4 #print-button, h4 #timestamps, h4 .meta,
+h4 .small, .h4 small, .h4 .unimportant, .h4 .title, .h4 .context, .h4 #contact, .h4 #print-button, .h4 #timestamps, .h4 .meta,
 .h4 .small,
 h5 small,
 h5 .unimportant,
@@ -1598,7 +1601,8 @@ h5 .context,
 h5 #contact,
 h5 #print-button,
 h5 #timestamps,
-h5 .small, .h5 small, .h5 .unimportant, .h5 .title, .h5 .context, .h5 #contact, .h5 #print-button, .h5 #timestamps,
+h5 .meta,
+h5 .small, .h5 small, .h5 .unimportant, .h5 .title, .h5 .context, .h5 #contact, .h5 #print-button, .h5 #timestamps, .h5 .meta,
 .h5 .small,
 h6 small,
 h6 .unimportant,
@@ -1607,7 +1611,8 @@ h6 .context,
 h6 #contact,
 h6 #print-button,
 h6 #timestamps,
-h6 .small, .h6 small, .h6 .unimportant, .h6 .title, .h6 .context, .h6 #contact, .h6 #print-button, .h6 #timestamps,
+h6 .meta,
+h6 .small, .h6 small, .h6 .unimportant, .h6 .title, .h6 .context, .h6 #contact, .h6 #print-button, .h6 #timestamps, .h6 .meta,
 .h6 .small {
   font-size: 75%;
 }
@@ -1662,7 +1667,7 @@ p {
 }
 
 /* line 79, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.1/vendor/assets/stylesheets/bootstrap/_type.scss */
-small, .unimportant, .title, .context, #contact, #print-button, #timestamps,
+small, .unimportant, .title, .context, #contact, #print-button, #timestamps, .meta,
 .small {
   font-size: 85%;
 }
@@ -1930,6 +1935,7 @@ blockquote .context,
 blockquote #contact,
 blockquote #print-button,
 blockquote #timestamps,
+blockquote .meta,
 blockquote .small {
   display: block;
   font-size: 80%;
@@ -1945,6 +1951,7 @@ blockquote .context:before,
 blockquote #contact:before,
 blockquote #print-button:before,
 blockquote #timestamps:before,
+blockquote .meta:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
@@ -1967,6 +1974,7 @@ blockquote.pull-right {
 .blockquote-reverse #contact:before,
 .blockquote-reverse #print-button:before,
 .blockquote-reverse #timestamps:before,
+.blockquote-reverse .meta:before,
 .blockquote-reverse .small:before,
 blockquote.pull-right footer:before,
 blockquote.pull-right small:before,
@@ -1976,6 +1984,7 @@ blockquote.pull-right .context:before,
 blockquote.pull-right #contact:before,
 blockquote.pull-right #print-button:before,
 blockquote.pull-right #timestamps:before,
+blockquote.pull-right .meta:before,
 blockquote.pull-right .small:before {
   content: '';
 }
@@ -1988,6 +1997,7 @@ blockquote.pull-right .small:before {
 .blockquote-reverse #contact:after,
 .blockquote-reverse #print-button:after,
 .blockquote-reverse #timestamps:after,
+.blockquote-reverse .meta:after,
 .blockquote-reverse .small:after,
 blockquote.pull-right footer:after,
 blockquote.pull-right small:after,
@@ -1997,6 +2007,7 @@ blockquote.pull-right .context:after,
 blockquote.pull-right #contact:after,
 blockquote.pull-right #print-button:after,
 blockquote.pull-right #timestamps:after,
+blockquote.pull-right .meta:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
@@ -7960,96 +7971,91 @@ button.close {
   }
 }
 /* line 6, ../sass/screen.sass */
-.unimportant, .title, .context, #contact, #print-button, #timestamps {
+.unimportant, .title, .context, #contact, #print-button, #timestamps, .meta {
   color: gray;
+  line-height: 18px;
 }
 
-/* line 10, ../sass/screen.sass */
+/* line 11, ../sass/screen.sass */
 .unit, .experience, .project {
   margin: 0.5em 0;
 }
 
-/* line 14, ../sass/screen.sass */
+/* line 15, ../sass/screen.sass */
 h1 {
   margin-bottom: 5px;
 }
 
-/* line 17, ../sass/screen.sass */
+/* line 18, ../sass/screen.sass */
 h5 {
   margin: 0;
 }
 
-/* line 20, ../sass/screen.sass */
+/* line 21, ../sass/screen.sass */
 ul {
   padding-left: 1em;
 }
 
-/* line 25, ../sass/screen.sass */
+/* line 26, ../sass/screen.sass */
 li {
   margin-right: 5%;
 }
 
-/* line 29, ../sass/screen.sass */
+/* line 30, ../sass/screen.sass */
 header {
   overflow: auto;
 }
 
-/* line 32, ../sass/screen.sass */
+/* line 33, ../sass/screen.sass */
 .container {
   padding: 0.5em 0;
   position: relative;
 }
 
-/* line 40, ../sass/screen.sass */
+/* line 41, ../sass/screen.sass */
 .header ul {
   padding: 0;
 }
 
-/* line 48, ../sass/screen.sass */
+/* line 49, ../sass/screen.sass */
 .main {
   -webkit-column-count: 2;
   -webkit-column-gap: 20px;
 }
 
-/* line 61, ../sass/screen.sass */
+/* line 62, ../sass/screen.sass */
 .position {
   float: left;
 }
 
-/* line 64, ../sass/screen.sass */
+/* line 65, ../sass/screen.sass */
 .job {
   overflow: auto;
 }
 
-/* line 70, ../sass/screen.sass */
+/* line 71, ../sass/screen.sass */
 .title {
   color: black;
-  line-height: 18px;
 }
 
-/* line 75, ../sass/screen.sass */
-.context {
-  line-height: 18px;
-}
-
-/* line 79, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 #contact {
   margin-bottom: 10px;
 }
-/* line 83, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 #contact li {
   display: inline-block;
   margin: 0 0.1em;
 }
 
-/* line 87, ../sass/screen.sass */
+/* line 86, ../sass/screen.sass */
 #print-button {
   position: absolute;
   top: 1em;
   right: 1em;
 }
 
-/* line 93, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #timestamps {
   position: absolute;
   bottom: 1%;
@@ -8057,14 +8063,9 @@ header {
 }
 
 @media (max-width: 767px) {
-  /* line 100, ../sass/screen.sass */
+  /* line 99, ../sass/screen.sass */
   .row-fluid [class*="span"], .header [class*="span"], .main [class*="span"] {
     width: 50%;
     float: left;
   }
-}
-/* line 104, ../sass/screen.sass */
-.stars {
-  color: #888888;
-  content: "\f02a";
 }
