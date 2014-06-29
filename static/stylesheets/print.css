@@ -8063,6 +8063,12 @@ header {
     float: left;
   }
 }
+/* line 104, ../sass/screen.sass */
+.stars {
+  color: #888888;
+  content: "\f02a";
+}
+
 /* line 4, ../sass/print.sass */
 #print-button {
   display: none;

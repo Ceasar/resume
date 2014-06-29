@@ -8063,3 +8063,8 @@ header {
     float: left;
   }
 }
+/* line 104, ../sass/screen.sass */
+.stars {
+  color: #888888;
+  content: "\f02a";
+}

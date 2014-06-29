@@ -30,8 +30,28 @@
     }
     $('#access_date').text(printDate(new Date()));
 
-    $.getJSON("https://api.github.com/repos/{{ identity.github }}/resume?callback=?", function(data) {
-        $("#updated_at").text(printDate(new Date(data.data.updated_at)));
+    var getRepo = function(repo_name, callback) {
+        var url = (
+        "https://api.github.com/repos/Ceasar/" + repo_name + "?callback=?");
+        $.getJSON(url, callback);
+    }
+
+    getRepo("resume", function(resp) {
+        $("#updated_at").text(printDate(new Date(resp.data.updated_at)));
+    });
+
+    var projects = [
+    {% for project in projects %}
+        "{{project.name}}"{% if not loop.last %},{% endif %}
+    {%endfor %}
+    ];
+    var stargazers_count;
+    $.each(projects, function(index, project) {
+        getRepo(project, function(resp) {
+            stargazers_count = resp.data.stargazers_count;
+            $("#" + project + " .stars").text("Stars: " + stargazers_count);
+            console.log(resp);
+        });
     });
 </script>
 {% endblock %}
