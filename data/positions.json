@@ -25,7 +25,7 @@
         "end": "May 2014",
         "where": "Philadelphia, PA",
         "what": [
-            "Implemented major parts of <a href='http://eventsatpenn.com/'>Events@Penn</a>.",
+            "Significantly contributed to <a href='http://eventsatpenn.com/'>Events@Penn</a> using Meteor.js.",
             "Implemented and open-sourced the <a href='http://github.com/pennappslabs/penncoursereview-sdk-python'>Python SDK for the Penn Course Review API</a>.",
             "Implemented the <a href='http://penncoursereview.com'>PennCourseReview</a> client using Django."
         ]
