@@ -26,17 +26,16 @@ embedded using Javascript and Jinja2. An example `resume.json` appears below:
 ```
 {
     "identity": {
-        "name": "John Doe",
-        "address": "123 Baker Lane",
-        "mobile": "123-456-7890",
-        "email": "john@example.com",
+        "name": "Ceasar Bautista",
+        "address": "275 Capp St, San Franciso, CA, 94110",
+        "mobile": "702-979-4316",
+        "email": "cbautista2010@gmail.com",
         "github": "Ceasar"
     },
     "education": {
-        "name": "Stanford University",
-        "degree": "BSE in Computer Science",
-        "when": "Fall 2010 - Spring 2014",
-        "what": "Coursework: Operating Systems, Algorithms, Databases, AI, UNIX"
+        "name": "University of Pennsylvania",
+        "degree": "Computer Science",
+        "when": "Fall 2010 - Spring 2014"
     },
     "positions": [
         {
@@ -44,8 +43,11 @@ embedded using Javascript and Jinja2. An example `resume.json` appears below:
             "title": "Software Engineer",
             "href": "http://claralabs.com",
             "start": "May 2014",
-            "end": "Present",
-            "where": "San Francisco, CA"
+            "end": "September 2014",
+            "where": "San Francisco, CA",
+            "what": [
+                "Built the Clara REST API, including frameworks to automatically generate and test endpoints, using Flask, SQLAlchemy, and pytest."
+            ]
         }, {
             "company": "Facebook",
             "title": "Software Engineer Intern",
@@ -91,6 +93,10 @@ embedded using Javascript and Jinja2. An example `resume.json` appears below:
         "regex"
     ],
     "skills": [
+        "Python, Flask, Werkzeug, Django, SQLAlchemy, pytest",
+        "HTTP, HTML, CSS, Javascript, IMAP",
+        "UNIX, Git, Make",
+        "Unicode"
     ]
 }
 ```
