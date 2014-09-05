@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-from staticjinja import make_renderer
->>>>>>> Updated build to use staticjinja 0.1.3
 import json
 
 from staticjinja import make_renderer
