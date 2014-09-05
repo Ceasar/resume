@@ -1,7 +1,7 @@
 
 ENV=env
 
-index.html: $(ENV) data/* templates/*
+index.html: $(ENV) data/* templates/* static/stylesheets
 	. $(ENV)/bin/activate; python build.py
  
 $(ENV): requirements.txt
@@ -17,3 +17,6 @@ deploy:
 	git commit --amend --no-edit
 	git push origin gh-pages -f
 	git checkout master
+
+static/stylesheets: static/sass
+	compass compile static
