@@ -1,7 +1,7 @@
 
 ENV=env
 
-index.html: $(ENV) data templates
+index.html: $(ENV) data/* templates/*
 	. $(ENV)/bin/activate; python build.py
  
 $(ENV): requirements.txt
