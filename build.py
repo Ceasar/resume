@@ -1,11 +1,11 @@
-from staticjinja import Renderer
 import json
+
+from staticjinja import Renderer
 
 
 def get_data(filename):
     with open(filename) as f:
-        data = json.loads(f.read())
-    return data
+        return json.loads(f.read())
 
 
 def index_context():
