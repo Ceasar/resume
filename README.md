@@ -1,33 +1,49 @@
 # Overview
 
-Modular resume.
+An attempt to make a modular resume that is easy to maintain.
 
 ## Features
 
 - Fluid layout
-- Print button in screen version
-- Dynamic access and update date
-- Data separated from html
-
-# Installation
-
-`pip install -r requirements.txt`
+- Download button in screen version
+- Dynamic access date and update date
+- Data separated from presentation
 
 # Quickstart
 
+To generate the resume, simply run:
+
+```
+make
+```
+
 ## Data
 
-The resume is meant to be completely modular. Consequently, personal data is not embedded directly in the HTML. To get around this, data is stored inside of `data/` and embedded using jinja.
+The resume is meant to be completely modular, so no personal data is embedded
+directly in the HTML. Instead, data is stored inside of `data/` and embedded
+using Javascript and Jinja2.
 
-The following files are necessary for the resume to work.
+The following files are necessary to populate the resume:
 
+- data/education.json
 - data/identity.json
-- data/languages.json
 - data/positions.json
 - data/projects.json
-- data/technologies.json
+- data/skills.json
 
 Examples of each are provided below.
+
+## data/education.json
+
+Information about your education. For example:
+
+```
+{
+    "name": "University of Pennsylvania",
+    "degree": "Computer Science",
+    "when": "Fall 2010 - Spring 2014"
+}
+```
 
 ## data/identity.json
 
@@ -39,15 +55,6 @@ Examples of each are provided below.
     "email": "cbautista2010@gmail.com",
     "github": "Ceasar"
 }
-```
-
-## data/languages.json
-
-```
-[
-    {"name":"Python"},
-    {"name":"PHP"}
-]
 ```
 
 ## data/positions.json
@@ -95,45 +102,39 @@ Examples of each are provided below.
 
 ## data/projects.json
 
+This is a list of the name of Github projects you want to show off. The rest of
+the data is populated from the Github API.
+
 ```
 [
-    {
-        "name": "staticjinja",
-        "what": "Effortlessly deploy static sites.",
-        "when": "Fall 2012",
-        "href": "https://github.com/Ceasar/staticjinja"
-    }, {
-        "name": "pep8fix",
-        "what": "Correct Python files that don't adhere to PEP8.",
-        "when": "Ongoing",
-        "href": "https://github.com/Ceasar/pep8fix"
-    }, {
-        "name": "regex",
-        "what": "Haskell regular expression matcher.",
-        "when": "Spring 2012",
-        "href": "https://github.com/Ceasar/regex"
-    }
+    "staticjinja",
+    "pep8fix",
+    "regex",
 ]
 ```
 
-## data/technologies.json
+## data/skills.json
+
+This is a list of skills you have.
 
 ```
 [
-    {"name":"Django"},
-    {"name":"HTML/CSS"},
-    {"name":"SQL"},
-    {"name":"Unix/Git"}
-
+    "Python, Flask, Werkzeug, Django, SQLAlchemy, pytest",
+    "HTML, CSS, Javascript, HTTP, IMAP",
+    "UNIX, make, git",
+    "Unicode"
 ]
 ```
 
 ## Compilation
 
-To compile the templates into the resume, run `python build.py`. This will automatically watch the templates for changes and rebuild the resume on change.
-
-My ruby is a little weak, but to compile the sass to css requires [compass](http://compass-style.org/) (this is because the sass requires bootstrap-sass which requires compass). Once installed, run `compass watch static` and it will watch for any changes and update the css accordingly.
+My ruby is a little weak, but to compile the sass to css requires
+[compass](http://compass-style.org/) (this is because the sass requires
+bootstrap-sass which requires compass). Once installed, run `compass watch
+static` and it will watch for any changes and update the css accordingly.
 
 # Converting to PDF
 
-To convert the web page to a PDF, the best way I've found is just to print to PDF (making sure to uncheck headers and footers). A print button is on the screen version of the resume for convenience.
+To convert the web page to a PDF, the best way I've found is just to print to
+PDF (making sure to uncheck headers and footers). A print button is on the
+screen version of the resume for convenience.
