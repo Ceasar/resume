@@ -15,9 +15,7 @@
     </div>
     <button id="print-button" class="btn" onclick="window.print()">Download</button>
     <div id="timestamps">
-        <span>Accessed <span id="access_date"></span>.</span>
-        <span id="updated_at"></span>
-        <span id="html_url"></span>
+        <span>Retrieved <span id="date_accessed"></span> from <span id="web_address"></span>.</span>
     </div>
 </div>
 <script>
@@ -54,15 +52,8 @@
         );
     }
 
-    $('#access_date').text(printDate(new Date()));
-    $('#html_url').text(document.URL);
-
-    getRepo("resume", function(resp) {
-        if (resp.meta.status !== 403) {
-            $("#updated_at").text(
-                "Updated " + printDate(new Date(resp.data.updated_at))) + ".";
-        }
-    });
+    $('#date_accessed').text(printDate(new Date()));
+    $('#web_address').text(document.URL);
 
     var projects = [
     {% for project in projects %}
