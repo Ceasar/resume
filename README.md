@@ -1,21 +1,33 @@
 # Overview
 
-An attempt to make a modular resume that is easy to maintain.
+An attempt to make a modular resume that is easy to maintain. You can find an
+example [here](http://ceasarbautista.com/resume/).
 
 ## Features
 
-- Fluid layout
-- Download button in screen version
-- Dynamic access date and update date
-- Data separated from presentation
+- Information about your Github projects, such as fork and stars, are included
+  as part of your projects so viewers can get of sense of their gravity at a
+  glance.
+- A "Download" button is included in the screen version for easily generating
+  PDFs
+- A bibliographic section containing the date accessed and the URL is included
+  to ensure interviewers never use an outdated version of your resume (at least
+  without knowing it)
+- Data is separated from presentation for portability
+- Fluid layout for viewing on any device
 
 # Quickstart
 
 To generate the resume, simply run:
 
 ```
-make
+make index.html
 ```
+
+This will generate a file `index.html`, an HTML version of your resume, which
+is compatible with [Github Pages](https://pages.github.com/).
+
+This may require you to install [Compass](http://compass-style.org/) .
 
 ## Data
 
@@ -101,17 +113,7 @@ embedded using Javascript and Jinja2. An example `resume.json` appears below:
 }
 ```
 
-You should edit this to contain your own data.
-
-## Compilation
-
-My ruby is a little weak, but to compile the sass to css requires
-[compass](http://compass-style.org/) (this is because the sass requires
-bootstrap-sass which requires compass). Once installed, run `compass watch
-static` and it will watch for any changes and update the css accordingly.
-
-# Converting to PDF
-
-To convert the web page to a PDF, the best way I've found is just to print to
-PDF (making sure to uncheck headers and footers). A print button is on the
-screen version of the resume for convenience.
+You should edit this to contain your own information. Note that `projects` is
+an array containing the names of the Github projects you want to show (the
+actual information is taken from the [Github
+API](https://developer.github.com/v3/).
