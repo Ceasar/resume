@@ -1,18 +1,7 @@
 [
-    {
-        "name": "twosheds",
-        "href": "https://github.com/Ceasar/twosheds"
-    }, {
-        "name": "staticjinja",
-        "href": "https://github.com/Ceasar/staticjinja"
-    }, {
-        "name": "Encyclopedia",
-        "href": "https://github.com/Ceasar/Encyclopedia"
-    }, {
-        "name": "LisPy",
-        "href": "https://github.com/Ceasar/LisPy"
-    }, {
-        "name": "regex",
-        "href": "https://github.com/Ceasar/regex"
-    }
+    "twosheds",
+    "staticjinja",
+    "Encyclopedia",
+    "LisPy",
+    "regex"
 ]

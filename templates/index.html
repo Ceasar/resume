@@ -47,7 +47,8 @@
     }
 
     // Fill in information about a repository
-    var updateProject = function(project, description, forksCount, stargazersCount) {
+    var updateProject = function(project, href, description, forksCount, stargazersCount) {
+        $("#" + project + " .name a").attr("href", href);
         $("#" + project + " .description").text(description);
         $("#" + project + " .meta").text(
             "Forks: " + forksCount + ", Stars: " + stargazersCount
@@ -63,7 +64,7 @@
 
     var projects = [
     {% for project in projects %}
-        "{{project.name}}"{% if not loop.last %},{% endif %}
+        "{{project}}"{% if not loop.last %},{% endif %}
     {%endfor %}
     ];
     $.each(projects, function(index, project) {
@@ -71,6 +72,7 @@
             if (resp.meta.status !== 403) {
                 updateProject(
                     project,
+                    resp.data.html_url,
                     resp.data.description,
                     resp.data.forks_count,
                     resp.data.stargazers_count
