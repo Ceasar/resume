@@ -7998,64 +7998,65 @@ ul {
 
 /* line 26, ../sass/screen.sass */
 li {
+  line-height: 18px;
   margin-right: 5%;
 }
 
-/* line 30, ../sass/screen.sass */
+/* line 31, ../sass/screen.sass */
 header {
   overflow: auto;
 }
 
-/* line 33, ../sass/screen.sass */
+/* line 34, ../sass/screen.sass */
 .container {
   padding: 0.5em 0;
   position: relative;
 }
 
-/* line 41, ../sass/screen.sass */
+/* line 42, ../sass/screen.sass */
 .header ul {
   padding: 0;
 }
 
-/* line 49, ../sass/screen.sass */
+/* line 50, ../sass/screen.sass */
 .main {
   -webkit-column-count: 2;
   -webkit-column-gap: 20px;
 }
 
-/* line 62, ../sass/screen.sass */
+/* line 63, ../sass/screen.sass */
 .position {
   float: left;
 }
 
-/* line 65, ../sass/screen.sass */
+/* line 66, ../sass/screen.sass */
 .job {
   overflow: auto;
 }
 
-/* line 71, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 .title {
   color: black;
 }
 
-/* line 78, ../sass/screen.sass */
+/* line 79, ../sass/screen.sass */
 #contact {
   margin-bottom: 10px;
 }
-/* line 82, ../sass/screen.sass */
+/* line 83, ../sass/screen.sass */
 #contact li {
   display: inline-block;
   margin: 0 0.1em;
 }
 
-/* line 86, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 #print-button {
   position: absolute;
   top: 1em;
   right: 1em;
 }
 
-/* line 92, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 #timestamps {
   position: absolute;
   bottom: 1%;
@@ -8063,7 +8064,7 @@ header {
 }
 
 @media (max-width: 767px) {
-  /* line 99, ../sass/screen.sass */
+  /* line 100, ../sass/screen.sass */
   .row-fluid [class*="span"], .header [class*="span"], .main [class*="span"] {
     width: 50%;
     float: left;
