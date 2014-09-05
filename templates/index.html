@@ -48,12 +48,14 @@
         "{{project.name}}"{% if not loop.last %},{% endif %}
     {%endfor %}
     ];
-    var forks_count, stargazers_count;
+    var description, forks_count, stargazers_count;
     $.each(projects, function(index, project) {
         getRepo(project, function(resp) {
             if (resp.meta.status !== 403) {
+                description = resp.data.description || "";
                 forks_count = resp.data.forks_count || 0;
                 stargazers_count = resp.data.stargazers_count || 0;
+                $("#" + project + " .description").text(description);
                 $("#" + project + " .meta").text(
                     "Forks: " + forks_count + ", Stars: " + stargazers_count
                 );

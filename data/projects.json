@@ -1,23 +1,18 @@
 [
     {
         "name": "twosheds",
-        "what": "Write your own shell, in Python.",
         "href": "https://github.com/Ceasar/twosheds"
     }, {
         "name": "staticjinja",
-        "what": "Effortlessly deploy static sites.",
         "href": "https://github.com/Ceasar/staticjinja"
     }, {
         "name": "Encyclopedia",
-        "what": "Tools for managing a personal encyclopedia",
         "href": "https://github.com/Ceasar/Encyclopedia"
     }, {
         "name": "LisPy",
-        "what": "Lisp interpreter in Python",
         "href": "https://github.com/Ceasar/LisPy"
     }, {
         "name": "regex",
-        "what": "Haskell regular expression matcher.",
         "href": "https://github.com/Ceasar/regex"
     }
 ]
