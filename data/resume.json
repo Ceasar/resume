@@ -1,29 +1,3 @@
-# Overview
-
-An attempt to make a modular resume that is easy to maintain.
-
-## Features
-
-- Fluid layout
-- Download button in screen version
-- Dynamic access date and update date
-- Data separated from presentation
-
-# Quickstart
-
-To generate the resume, simply run:
-
-```
-make
-```
-
-## Data
-
-The resume is meant to be completely modular, so no personal data is embedded
-directly in the HTML. Instead, data is stored inside of `data/resume.json` and
-embedded using Javascript and Jinja2. An example `resume.json` appears below:
-
-```
 {
     "identity": {
         "name": "John Doe",
@@ -93,19 +67,3 @@ embedded using Javascript and Jinja2. An example `resume.json` appears below:
     "skills": [
     ]
 }
-```
-
-You should edit this to contain your own data.
-
-## Compilation
-
-My ruby is a little weak, but to compile the sass to css requires
-[compass](http://compass-style.org/) (this is because the sass requires
-bootstrap-sass which requires compass). Once installed, run `compass watch
-static` and it will watch for any changes and update the css accordingly.
-
-# Converting to PDF
-
-To convert the web page to a PDF, the best way I've found is just to print to
-PDF (making sure to uncheck headers and footers). A print button is on the
-screen version of the resume for convenience.
