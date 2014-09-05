@@ -30,10 +30,28 @@
     }
     $('#access_date').text(printDate(new Date()));
 
+    // Fetch data about a repository.
     var getRepo = function(repo_name, callback) {
-        var url = (
-        "https://api.github.com/repos/Ceasar/" + repo_name + "?callback=?");
-        $.getJSON(url, callback);
+        var respJson = sessionStorage.getItem(repo_name);
+        if (respJson === null) {
+            var url = (
+            "https://api.github.com/repos/Ceasar/" + repo_name + "?callback=?");
+            $.getJSON(url, function(resp) {
+                sessionStorage.setItem(repo_name, JSON.stringify(resp));
+                callback(resp);
+            });
+        } else {
+            resp = JSON.parse(respJson);
+            callback(resp);
+        }
+    }
+
+    // Fill in information about a repository
+    var updateProject = function(project, description, forksCount, stargazersCount) {
+        $("#" + project + " .description").text(description);
+        $("#" + project + " .meta").text(
+            "Forks: " + forksCount + ", Stars: " + stargazersCount
+        );
     }
 
     getRepo("resume", function(resp) {
@@ -48,16 +66,14 @@
         "{{project.name}}"{% if not loop.last %},{% endif %}
     {%endfor %}
     ];
-    var description, forks_count, stargazers_count;
     $.each(projects, function(index, project) {
         getRepo(project, function(resp) {
             if (resp.meta.status !== 403) {
-                description = resp.data.description || "";
-                forks_count = resp.data.forks_count || 0;
-                stargazers_count = resp.data.stargazers_count || 0;
-                $("#" + project + " .description").text(description);
-                $("#" + project + " .meta").text(
-                    "Forks: " + forks_count + ", Stars: " + stargazers_count
+                updateProject(
+                    project,
+                    resp.data.description,
+                    resp.data.forks_count,
+                    resp.data.stargazers_count
                 );
             }
         });
