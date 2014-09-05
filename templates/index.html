@@ -17,7 +17,7 @@
     <div id="timestamps">
         <span>Accessed <span id="access_date"></span>.</span>
         <span id="updated_at"></span>
-        <span>ceasarbautista.com/resume</span>
+        <span id="html_url"></span>
     </div>
 </div>
 <script>
@@ -28,7 +28,6 @@
         var year = d.getFullYear();
         return month + "/" + day + "/" + year;
     }
-    $('#access_date').text(printDate(new Date()));
 
     // Fetch data about a repository.
     var getRepo = function(repo_name, callback) {
@@ -54,6 +53,9 @@
             "Forks: " + forksCount + ", Stars: " + stargazersCount
         );
     }
+
+    $('#access_date').text(printDate(new Date()));
+    $('#html_url').text(document.URL);
 
     getRepo("resume", function(resp) {
         if (resp.meta.status !== 403) {
