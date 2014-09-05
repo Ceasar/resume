@@ -10,6 +10,7 @@ def get_data(filename):
 
 def index_context():
     return {
+        "education": get_data("data/education.json"),
         "identity": get_data("data/identity.json"),
         "projects": get_data("data/projects.json"),
         "positions": get_data("data/positions.json"),

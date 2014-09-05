@@ -1,12 +1,9 @@
 <div class="section" id="education">
     <h4>Education</h4>
     <div class="contextual">
-        <div class="name">University of Pennsylvania</div>
-        <div class="title">(Expected) BSE in Computer Science</div>
-        <div class="context">Fall 2010 - Spring 2014</div>
-        <ul>
-            <li>CS Junior seeking summer internship.</li>
-            <li>Coursework: Advanced Functional Programming, Operating Systems, Algorithms, Software Engineering, Databases, AI, Recursion, Cloud Computing, Python, Haskell, Unix, C++</li>
-        </ul>
+        <div class="name">{{ education.name }}</div>
+        <div class="title">{{ education.degree }}</div>
+        <div class="context">{{ education.when }}</div>
+        <p>{{ education.what }}</p>
     </div>
 </div>
