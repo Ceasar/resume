@@ -45,9 +45,10 @@
 
     // Fill in information about a repository
     var updateProject = function(project, href, description, forksCount, stargazersCount) {
-        $("#" + project + " .name a").attr("href", href);
-        $("#" + project + " .description").text(description);
-        $("#" + project + " .meta").text(
+        var el = $(("#" + project).replace(".", "-"));
+        el.find(".name a").attr("href", href);
+        el.find(".description").text(description);
+        el.find(".meta").text(
             "Forks: " + forksCount + ", Stars: " + stargazersCount
         );
     }
@@ -62,6 +63,7 @@
     ];
     $.each(projects, function(index, project) {
         getRepo(project, function(resp) {
+            console.log(resp);
             if (resp.meta.status !== 403) {
                 updateProject(
                     project,
